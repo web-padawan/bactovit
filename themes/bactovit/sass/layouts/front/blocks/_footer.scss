@@ -1,0 +1,7 @@
+.footer {
+  background: $gray-mid;
+
+  &__inner {
+    @include container;
+  }
+}

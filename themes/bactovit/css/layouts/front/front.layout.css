@@ -1,0 +1,363 @@
+body {
+  min-width: 320px;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+@font-face {
+  font-family: "BanderaPro";
+  src: url("../../../fonts/BanderaPro/BanderaPro.eot");
+  src: url("../../../fonts/BanderaPro/BanderaPro.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaPro/BanderaPro.woff") format("woff"), url("../../../fonts/BanderaPro/BanderaPro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BanderaPro";
+  src: url("../../../fonts/BanderaPro/BanderaPro-Bold.eot");
+  src: url("../../../fonts/BanderaPro/BanderaPro-Bold.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaPro/BanderaPro-Bold.woff") format("woff"), url("../../../fonts/BanderaPro/BanderaPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BanderaPro";
+  src: url("../../../fonts/BanderaPro/BanderaPro-Italic.eot");
+  src: url("../../../fonts/BanderaPro/BanderaPro-Italic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaPro/BanderaPro-Italic.woff") format("woff"), url("../../../fonts/BanderaPro/BanderaPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BanderaPro";
+  src: url("../../../fonts/BanderaPro/BanderaPro-BoldItalic.eot");
+  src: url("../../../fonts/BanderaPro/BanderaPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaPro/BanderaPro-BoldItalic.woff") format("woff"), url("../../../fonts/BanderaPro/BanderaPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BanderaProHeavy";
+  src: url("../../../fonts/BanderaProHeavy/BanderaProHeavy.eot");
+  src: url("../../../fonts/BanderaProHeavy/BanderaProHeavy.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaProHeavy/BanderaProHeavy.woff") format("woff"), url("../../../fonts/BanderaProHeavy/BanderaProHeavy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BanderaProHeavy";
+  src: url("../../../fonts/BanderaProHeavy/BanderaProHeavy-Italic.eot");
+  src: url("../../../fonts/BanderaProHeavy/BanderaProHeavy-Italic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaProHeavy/BanderaProHeavy-Italic.woff") format("woff"), url("../../../fonts/BanderaProHeavy/BanderaProHeavy-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BanderaProLight";
+  src: url("../../../fonts/BanderaProLight/BanderaProLight.eot");
+  src: url("../../../fonts/BanderaProLight/BanderaProLight.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaProLight/BanderaProLight.woff") format("woff"), url("../../../fonts/BanderaProLight/BanderaProLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BanderaProLight";
+  src: url("../../../fonts/BanderaProLight/BanderaProLight-Italic.eot");
+  src: url("../../../fonts/BanderaProLight/BanderaProLight-Italic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaProLight/BanderaProLight-Italic.woff") format("woff"), url("../../../fonts/BanderaProLight/BanderaProLight-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BanderaProMedium";
+  src: url("../../../fonts/BanderaProMedium/BanderaProMedium.eot");
+  src: url("../../../fonts/BanderaProMedium/BanderaProMedium.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaProMedium/BanderaProMedium.woff") format("woff"), url("../../../fonts/BanderaProMedium/BanderaProMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BanderaProMedium";
+  src: url("../../../fonts/BanderaProMedium/BanderaProMedium-Italic.eot");
+  src: url("../../../fonts/BanderaProMedium/BanderaProMedium-Italic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaProMedium/BanderaProMedium-Italic.woff") format("woff"), url("../../../fonts/BanderaProMedium/BanderaProMedium-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "BanderaProThin";
+  src: url("../../../fonts/BanderaProThin/BanderaProThin.eot");
+  src: url("../../../fonts/BanderaProThin/BanderaProThin.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaProThin/BanderaProThin.woff") format("woff"), url("../../../fonts/BanderaProThin/BanderaProThin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BanderaProThin";
+  src: url("../../../fonts/BanderaProThin/BanderaProThin-Italic.eot");
+  src: url("../../../fonts/BanderaProThin/BanderaProThin-Italic.eot?#iefix") format("embedded-opentype"), url("../../../fonts/BanderaProThin/BanderaProThin-Italic.woff") format("woff"), url("../../../fonts/BanderaProThin/BanderaProThin-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+.contact {
+  background: #626262;
+}
+
+.contact__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.contact__title {
+  float: left;
+  max-width: 40%;
+  margin-top: 40px;
+  margin-left: 18%;
+  padding-right: 20px;
+  vertical-align: top;
+  color: #fff;
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  text-align: right;
+}
+
+.contact__button {
+  display: none;
+}
+
+.contact__form {
+  float: left;
+  width: 45%;
+  padding-top: 40px;
+  padding-left: 15px;
+}
+
+.contact__small {
+  font-size: 28px;
+}
+
+.contact__large {
+  font-size: 54px;
+  line-height: 0.7;
+}
+
+.contact__fio {
+  float: left;
+  margin-bottom: 15px;
+}
+
+.question .contact__fio {
+  float: none;
+}
+
+.contact__email {
+  float: left;
+  clear: left;
+  margin: 0;
+}
+
+.question .contact__email {
+  float: none;
+}
+
+.contact__text {
+  float: right;
+  margin: 0;
+  position: relative;
+  top: -45px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.question .contact__text {
+  float: none;
+  position: static;
+}
+
+.contact__input {
+  max-width: 190px;
+  margin: 0;
+  padding: 6px 6px 6px 12px;
+  font-size: 14px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+
+.contact__input:focus {
+  outline: none;
+  border: solid 1px #999;
+}
+
+.question .contact__input:focus {
+  border: solid 1px #999;
+}
+
+.question .contact__input {
+  border: solid 1px #ccc;
+}
+
+.contact__textarea {
+  max-width: 200px;
+  max-height: 75px;
+  margin: 0;
+  padding: 12px 6px 6px 12px;
+  font-size: 14px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+}
+
+.contact__textarea:focus {
+  outline: none;
+  border: solid 1px #999;
+}
+
+.question .contact__textarea:focus {
+  border: solid 1px #999;
+}
+
+.question .contact__textarea {
+  margin: 20px auto;
+  max-width: 190px;
+  border: solid 1px #ccc;
+}
+
+.contact .webform-client-form {
+  max-width: 410px;
+  overflow: hidden;
+}
+
+.contact .form-actions {
+  float: right;
+  clear: both;
+  margin: 0;
+}
+
+.contact .form-submit {
+  position: relative;
+  top: -38px;
+  width: 200px;
+  padding: 7px 20px;
+  color: #fff;
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #626262;
+}
+
+.footer__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.header {
+  background: url("../../../images/front/bg/header.jpg") no-repeat center top;
+  width: 100%;
+  height: 690px;
+}
+
+.header__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 767px) {
+
+  .contact {
+    padding: 32px 0 38px;
+  }
+
+  .contact__title {
+    max-width: 200px;
+    float: none;
+    margin: 0 auto 25px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .contact__button {
+    display: block;
+    max-width: 220px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .contact__form {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .contact__title {
+    margin-left: 10%;
+  }
+
+  .contact__form {
+    width: 60%;
+  }
+
+  .contact__small {
+    font-size: 24px;
+  }
+
+  .contact__large {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .contact__small {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .contact__large {
+    display: inline-block;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+  .contact__small {
+    display: inline-block;
+    line-height: 1;
+    font-size: 24px;
+  }
+
+  .contact__large {
+    display: inline-block;
+    line-height: 1;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,33 @@
+$bpro-dir          : '../../../fonts/BanderaPro';
+$bpro-heavy-dir    : '../../../fonts/BanderaProHeavy';
+$bpro-light-dir    : '../../../fonts/BanderaProLight';
+$bpro-medium-dir   : '../../../fonts/BanderaProMedium';
+$bpro-thin-dir     : '../../../fonts/BanderaProThin';
+
+// BanderaPro
+@include font-face('BanderaPro', ('#{$bpro-dir}/BanderaPro.woff', '#{$bpro-dir}/BanderaPro.ttf'), '#{$bpro-dir}/BanderaPro.eot');
+@include font-face('BanderaPro', ('#{$bpro-dir}/BanderaPro-Bold.woff', '#{$bpro-dir}/BanderaPro-Bold.ttf'), '#{$bpro-dir}/BanderaPro-Bold.eot', bold, normal);
+@include font-face('BanderaPro', ('#{$bpro-dir}/BanderaPro-Italic.woff', '#{$bpro-dir}/BanderaPro-Italic.ttf'), '#{$bpro-dir}/BanderaPro-Italic.eot', normal, italic);
+@include font-face('BanderaPro', ('#{$bpro-dir}/BanderaPro-BoldItalic.woff', '#{$bpro-dir}/BanderaPro-BoldItalic.ttf'), '#{$bpro-dir}/BanderaPro-BoldItalic.eot', bold, italic);
+
+// BanderaProHeavy
+@include font-face('BanderaProHeavy', ('#{$bpro-heavy-dir}/BanderaProHeavy.woff', '#{$bpro-heavy-dir}/BanderaProHeavy.ttf'), '#{$bpro-heavy-dir}/BanderaProHeavy.eot');
+@include font-face('BanderaProHeavy', ('#{$bpro-heavy-dir}/BanderaProHeavy-Italic.woff', '#{$bpro-heavy-dir}/BanderaProHeavy-Italic.ttf'), '#{$bpro-heavy-dir}/BanderaProHeavy-Italic.eot', normal, italic);
+
+// BanderaProLight
+@include font-face('BanderaProLight', ('#{$bpro-light-dir}/BanderaProLight.woff', '#{$bpro-light-dir}/BanderaProLight.ttf'), '#{$bpro-light-dir}/BanderaProLight.eot');
+@include font-face('BanderaProLight', ('#{$bpro-light-dir}/BanderaProLight-Italic.woff', '#{$bpro-light-dir}/BanderaProLight-Italic.ttf'), '#{$bpro-light-dir}/BanderaProLight-Italic.eot', normal, italic);
+
+// BanderaProMedium
+@include font-face('BanderaProMedium', ('#{$bpro-medium-dir}/BanderaProMedium.woff', '#{$bpro-medium-dir}/BanderaProMedium.ttf'), '#{$bpro-medium-dir}/BanderaProMedium.eot');
+@include font-face('BanderaProMedium', ('#{$bpro-medium-dir}/BanderaProMedium-Italic.woff', '#{$bpro-medium-dir}/BanderaProMedium-Italic.ttf'), '#{$bpro-medium-dir}/BanderaProMedium-Italic.eot', normal, italic);
+
+// BanderaProThin
+@include font-face('BanderaProThin', ('#{$bpro-thin-dir}/BanderaProThin.woff', '#{$bpro-thin-dir}/BanderaProThin.ttf'), '#{$bpro-thin-dir}/BanderaProThin.eot');
+@include font-face('BanderaProThin', ('#{$bpro-thin-dir}/BanderaProThin-Italic.woff', '#{$bpro-thin-dir}/BanderaProThin-Italic.ttf'), '#{$bpro-thin-dir}/BanderaProThin-Italic.eot', normal, italic);
+
+$bpro         : 'BanderaPro', Georgia, Times, 'Times New Roman', serif;
+$bpro-heavy   : 'BanderaProHeavy', Georgia, Times, 'Times New Roman', serif;
+$bpro-light   : 'BanderaProLight', Georgia, Times, 'Times New Roman', serif;
+$bpro-medium  : 'BanderaProMedium', Georgia, Times, 'Times New Roman', serif;
+$bpro-thin    : 'BanderaProThin', Georgia, Times, 'Times New Roman', serif;
