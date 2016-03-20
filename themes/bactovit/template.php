@@ -18,6 +18,7 @@ function bactovit_omega_layout_alter(&$layout) {
       if ((string) $nid == '1') {
         $layout = 'front';
         drupal_add_js(drupal_get_path('theme', 'bactovit') . '/js/lib/jquery.singlePageNav.min.js');
+        drupal_add_js(drupal_get_path('theme', 'bactovit') . '/js/lib/jqModal.min.js');
       }
     }
   }
