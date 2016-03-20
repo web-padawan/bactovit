@@ -2,8 +2,124 @@
   background: url('../../../images/front/bg/header.jpg') no-repeat center top;
   width: 100%;
   height: 690px;
+  color: #fff;
 
   &__inner {
     @include container;
+    position: relative;
+    height: 100%;
+  }
+
+  &__flag {
+    position: absolute;
+    left: 315px;
+  }
+
+  &__nav {
+    float: right;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__navlink {
+    display: block;
+    padding: 50px 37px;
+    color: #fff;
+    font-family: $bpro-medium;
+    font-size: 18px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    position: relative;
+    top: 120px;
+    left: -40px;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: $bpro-medium;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 0.025em;
+  }
+
+  &__caps {
+    font-size: 130px;
+  }
+
+  &__slogan {
+    width: 67%;
+    float: right;
+    margin-top: 5px;
+    font-family: $bpro-light;
+    font-size: 30px;
+    line-height: 1.2;
+    font-style: italic;
+  }
+
+  &__buy {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 24px 55px;
+    background: #fac819;
+    color: #fff;
+    font-family: $bpro-medium;
+    font-size: 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 5px 0 #b6941b;
+
+    &:hover {
+      background: darken(#fac819, 10%);
+    }
+  }
+
+  &__contact {
+    position: absolute;
+    bottom: 32px;
+    right: 25px;
+    text-align: right;
+  }
+
+  &__phone {
+    margin-right: 6px;
+    margin-bottom: 14px;
+    font-family: $bpro-medium;
+    font-size: 30px;
+    letter-spacing: 0.025em;
+  }
+
+  &__icon {
+    display: inline-block;
+    margin: 0 8px;
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &--vkontakte {
+      @include sprite($s-vkontakte);
+    }
+    &--facebook {
+      @include sprite($s-facebook);
+    }
+  }
+
+  &__down {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include sprite($s-down);
   }
 }

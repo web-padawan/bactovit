@@ -3,6 +3,39 @@
   <header class="header">
     <div class="header__inner">
 
+      <div class="header__flag flag">&nbsp;</div>
+
+      <ul class="header__nav">
+        <li class="header__item">
+          <a class="header__navlink" href="#about">БактоВіт - це...</a>
+        </li>
+        <li class="header__item">
+          <a class="header__navlink" href="#why">Чому саме БактоВіт?</a>
+        </li>
+        <li class="header__item">
+          <a class="header__navlink" href="#capsule">Склад</a>
+        </li>
+        <li class="header__item header__item--last">
+          <a class="header__navlink" href="#usage">Спосіб вживання</a>
+        </li>
+      </ul>
+
+      <hgroup class="header__text">
+        <h1 class="header__title"><span class="header__caps">Б</span>акто<span class="header__caps">В</span>іт</h1>
+        <h2 class="header__slogan">Надійний захисник вашого імунітету</h2>
+      </hgroup>
+
+      <div class="header__contact">
+        <div class="header__phone">+38 (097) 256 23 25</div>
+        <div class="header__social">
+          <a class="header__icon header__icon--facebook" href="#">&nbsp;</a>
+          <a class="header__icon header__icon--vkontakte" href="#">&nbsp;</a>
+        </div>
+      </div>
+
+      <a id="buy" class="header__buy" href="#">Де купити</a>
+
+      <a id="down" class="header__down" href="#">&nbsp;</a>
     </div>
   </header>
 

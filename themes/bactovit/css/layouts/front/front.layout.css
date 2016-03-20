@@ -247,6 +247,13 @@ html {
   border-radius: 5px;
 }
 
+.flag {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: 0px 0px;
+  width: 107px;
+  height: 135px;
+}
+
 .footer {
   background: #626262;
 }
@@ -268,6 +275,7 @@ html {
   background: url("../../../images/front/bg/header.jpg") no-repeat center top;
   width: 100%;
   height: 690px;
+  color: #fff;
 }
 
 .header__inner {
@@ -275,12 +283,140 @@ html {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  height: 100%;
 }
 
 .header__inner:after {
   content: " ";
   display: block;
   clear: both;
+}
+
+.header__flag {
+  position: absolute;
+  left: 315px;
+}
+
+.header__nav {
+  float: right;
+  list-style-type: none;
+}
+
+.header__item {
+  display: inline-block;
+}
+
+.header__navlink {
+  display: block;
+  padding: 50px 37px;
+  color: #fff;
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header__navlink:hover {
+  text-decoration: underline;
+}
+
+.header__text {
+  position: relative;
+  top: 120px;
+  left: -40px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.header__title {
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+}
+
+.header__caps {
+  font-size: 130px;
+}
+
+.header__slogan {
+  width: 67%;
+  float: right;
+  margin-top: 5px;
+  font-family: "BanderaProLight", Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.header__buy {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  padding: 24px 55px;
+  background: #fac819;
+  color: #fff;
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 5px 0 #b6941b;
+}
+
+.header__buy:hover {
+  background: #dbac05;
+}
+
+.header__contact {
+  position: absolute;
+  bottom: 32px;
+  right: 25px;
+  text-align: right;
+}
+
+.header__phone {
+  margin-right: 6px;
+  margin-bottom: 14px;
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  letter-spacing: 0.025em;
+}
+
+.header__icon {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.header__icon:hover {
+  opacity: 0.8;
+}
+
+.header__icon--vkontakte {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -107px -74px;
+  width: 43px;
+  height: 42px;
+}
+
+.header__icon--facebook {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -134px -135px;
+  width: 42px;
+  height: 42px;
+}
+
+.header__down {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -186px -75px;
+  width: 59px;
+  height: 58px;
 }
 
 @media (max-width: 767px) {
