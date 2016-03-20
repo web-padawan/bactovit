@@ -4,6 +4,9 @@ $bpro-light-dir    : '../../../fonts/BanderaProLight';
 $bpro-medium-dir   : '../../../fonts/BanderaProMedium';
 $bpro-thin-dir     : '../../../fonts/BanderaProThin';
 
+$ptsans-narrow-dir    : '../../../fonts/PTSans-Narrow';
+$ptserif-dir          : '../../../fonts/PTSerif';
+
 // BanderaPro
 @include font-face('BanderaPro', ('#{$bpro-dir}/BanderaPro.woff', '#{$bpro-dir}/BanderaPro.ttf'), '#{$bpro-dir}/BanderaPro.eot');
 @include font-face('BanderaPro', ('#{$bpro-dir}/BanderaPro-Bold.woff', '#{$bpro-dir}/BanderaPro-Bold.ttf'), '#{$bpro-dir}/BanderaPro-Bold.eot', bold, normal);
@@ -26,8 +29,18 @@ $bpro-thin-dir     : '../../../fonts/BanderaProThin';
 @include font-face('BanderaProThin', ('#{$bpro-thin-dir}/BanderaProThin.woff', '#{$bpro-thin-dir}/BanderaProThin.ttf'), '#{$bpro-thin-dir}/BanderaProThin.eot');
 @include font-face('BanderaProThin', ('#{$bpro-thin-dir}/BanderaProThin-Italic.woff', '#{$bpro-thin-dir}/BanderaProThin-Italic.ttf'), '#{$bpro-thin-dir}/BanderaProThin-Italic.eot', normal, italic);
 
-$bpro         : 'BanderaPro', Georgia, Times, 'Times New Roman', serif;
-$bpro-heavy   : 'BanderaProHeavy', Georgia, Times, 'Times New Roman', serif;
-$bpro-light   : 'BanderaProLight', Georgia, Times, 'Times New Roman', serif;
-$bpro-medium  : 'BanderaProMedium', Georgia, Times, 'Times New Roman', serif;
-$bpro-thin    : 'BanderaProThin', Georgia, Times, 'Times New Roman', serif;
+// PTSansNarrow
+@include font-face('PTSansNarrow', ('#{$ptsans-narrow-dir}/PTSans-Narrow.woff', '#{$ptsans-narrow-dir}/PTSans-Narrow.ttf'), '#{$ptsans-narrow-dir}/PTSans-Narrow.eot');
+@include font-face('PTSansNarrow', ('#{$ptsans-narrow-dir}/PTSans-NarrowBold.woff', '#{$ptsans-narrow-dir}/PTSans-NarrowBold.ttf'), '#{$ptsans-narrow-dir}/PTSans-NarrowBold.eot', bold, normal);
+
+// PTSerif
+@include font-face('PTSerif', ('#{$ptserif-dir}/PTSerif-Regular.woff', '#{$ptserif-dir}/PTSerif-Regular.ttf'), '#{$ptserif-dir}/PTSerif-Regular.eot');
+@include font-face('PTSerif', ('#{$ptserif-dir}/PTSerif-Bold.woff', '#{$ptserif-dir}/PTSerif-Bold.ttf'), '#{$ptserif-dir}/PTSerif-Bold.eot', bold, normal);
+
+$bpro           : 'BanderaPro', Georgia, Times, 'Times New Roman', serif;
+$bpro-heavy     : 'BanderaProHeavy', Georgia, Times, 'Times New Roman', serif;
+$bpro-light     : 'BanderaProLight', Georgia, Times, 'Times New Roman', serif;
+$bpro-medium    : 'BanderaProMedium', Georgia, Times, 'Times New Roman', serif;
+$bpro-thin      : 'BanderaProThin', Georgia, Times, 'Times New Roman', serif;
+$ptsans-narrow  : 'PTSansNarrow', 'PTSans', Helvetica, Arial, sans-serif;
+$ptserif        : 'PTSerif', 'Times New Roman', serif;

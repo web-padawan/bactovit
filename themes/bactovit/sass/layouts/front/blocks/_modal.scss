@@ -1,0 +1,32 @@
+.modal {
+  padding: 25px 0 15px;
+  text-align: center;
+
+  @include breakpoint($md) {
+    max-width: 720px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    padding: 15px 0;
+    background: $gold;
+    color: #fff;
+    font-family: $ptserif;
+    font-size: 36px;
+  }
+
+  &__text {
+    padding: 0 40px;
+    color: $gray-mid;
+    font-family: $ptserif;
+    font-size: 17px;
+    line-height: 1.5;
+
+    @include breakpoint(max-width $md - 1) {
+      font-size: 13px;
+    }
+    &--func {
+      margin-top: 20px;
+    }
+  }
+}
