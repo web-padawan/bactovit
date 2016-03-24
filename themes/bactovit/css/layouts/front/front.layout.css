@@ -94,6 +94,20 @@ html {
 }
 
 @font-face {
+  font-family: "PTSans";
+  src: url("../../../fonts/PTSans/PTSans-Regular.eot");
+  src: url("../../../fonts/PTSans/PTSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans/PTSans-Regular.woff") format("woff"), url("../../../fonts/PTSans/PTSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../../../fonts/PTSans/PTSans-Bold.eot");
+  src: url("../../../fonts/PTSans/PTSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans/PTSans-Bold.woff") format("woff"), url("../../../fonts/PTSans/PTSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "PTSansNarrow";
   src: url("../../../fonts/PTSans-Narrow/PTSans-Narrow.eot");
   src: url("../../../fonts/PTSans-Narrow/PTSans-Narrow.eot?#iefix") format("embedded-opentype"), url("../../../fonts/PTSans-Narrow/PTSans-Narrow.woff") format("woff"), url("../../../fonts/PTSans-Narrow/PTSans-Narrow.ttf") format("truetype");
@@ -298,7 +312,7 @@ html {
 
 .about__circle--gold {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -92px -135px;
+  background-position: -50px -135px;
   width: 42px;
   height: 42px;
 }
@@ -497,7 +511,6 @@ html {
 
 .header {
   background: url("../../../images/front/bg/header.jpg") no-repeat center top;
-  width: 100%;
   height: 690px;
   color: #fff;
 }
@@ -626,7 +639,7 @@ html {
 
 .header__icon--facebook {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -50px -135px;
+  background-position: -92px -135px;
   width: 42px;
   height: 42px;
 }
@@ -726,6 +739,139 @@ html {
 
 .modal__text--func {
   margin-top: 20px;
+}
+
+.why {
+  background: url("../../../images/front/bg/why.jpg") no-repeat center top;
+  height: 940px;
+  color: #fff;
+}
+
+.why__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 100%;
+}
+
+.why__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.why__flag {
+  position: absolute;
+  left: 0;
+}
+
+.why__left {
+  float: left;
+  padding-top: 170px;
+}
+
+.why__right {
+  float: right;
+  max-width: 510px;
+  padding-top: 80px;
+}
+
+.why__question {
+  padding-left: 60px;
+  font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
+  font-size: 32px;
+}
+
+.why__brand {
+  padding-left: 20px;
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 0.7;
+  letter-spacing: 0.035em;
+}
+
+.why__yellow {
+  color: #fadd1a;
+}
+
+.why__steps {
+  margin-top: 60px;
+  margin-left: 32px;
+  list-style-type: none;
+}
+
+.why__step {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.why__step--1 .why__text {
+  position: relative;
+  left: -6px;
+}
+
+.why__step--2 {
+  margin: 0 2px 0 12px;
+}
+
+.why__step--2 .why__text {
+  position: relative;
+  left: -6px;
+  top: -3px;
+}
+
+.why__step--3 {
+  margin-left: 4px;
+}
+
+.why__arrow {
+  display: inline-block;
+  margin: 24px 12px 0;
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -176px -135px;
+  width: 18px;
+  height: 32px;
+}
+
+.why__icon--bottle {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: 0px -135px;
+  width: 50px;
+  height: 71px;
+}
+
+.why__icon--course {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -186px 0px;
+  width: 59px;
+  height: 75px;
+}
+
+.why__icon--pig {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -107px 0px;
+  width: 79px;
+  height: 74px;
+}
+
+.why__caption {
+  max-width: 70px;
+  margin-top: 10px;
+  font-family: "PTSans", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.why__text {
+  margin-bottom: 20px;
+  color: #ffe223;
+  font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.35;
 }
 
 @media (max-width: 767px) {

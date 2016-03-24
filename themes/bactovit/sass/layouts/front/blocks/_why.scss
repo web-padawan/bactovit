@@ -1,0 +1,112 @@
+.why {
+  background: url('../../../images/front/bg/why.jpg') no-repeat center top;
+  height: 940px;
+  color: #fff;
+
+  &__inner {
+    @include container;
+    position: relative;
+    height: 100%;
+  }
+
+  &__flag {
+    position: absolute;
+    left: 0;
+  }
+
+  &__left {
+    float: left;
+    padding-top: 170px;
+  }
+
+  &__right {
+    float: right;
+    max-width: 510px;
+    padding-top: 80px;
+  }
+
+  &__question {
+    padding-left: 60px;
+    font-family: $bpro;
+    font-size: 32px;
+  }
+
+  &__brand {
+    padding-left: 20px;
+    font-family: $bpro-medium;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 0.7;
+    letter-spacing: 0.035em;
+  }
+
+  &__yellow {
+    color: $light-yellow;
+  }
+
+  &__steps {
+    margin-top: 60px;
+    margin-left: 32px;
+    list-style-type: none;
+  }
+
+  &__step {
+    display: inline-block;
+    vertical-align: top;
+    &--1 {
+      .why__text {
+        position: relative;
+        left: -6px;
+      }
+    }
+    &--2 {
+      margin: 0 2px 0 12px;
+
+      .why__text {
+        position: relative;
+        left: -6px;
+        top: -3px;
+      }
+    }
+    &--3 {
+      margin-left: 4px;
+    }
+  }
+
+  &__arrow {
+    display: inline-block;
+    margin: 24px 12px 0;
+
+    @include sprite($s-arrow);
+  }
+
+  &__icon {
+
+    &--bottle {
+      @include sprite($s-bottle);
+    }
+    &--course {
+      @include sprite($s-course);
+    }
+    &--pig {
+      @include sprite($s-pig);
+    }
+  }
+
+  &__caption {
+    max-width: 70px;
+    margin-top: 10px;
+    font-family: $ptsans;
+    font-size: 17px;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: #ffe223;
+    font-family: $bpro;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+}

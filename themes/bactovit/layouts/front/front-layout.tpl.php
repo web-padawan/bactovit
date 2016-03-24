@@ -219,6 +219,43 @@
           <a href="javascript:void(0);" class="jqmClose" title="Закрыть окно"></a>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="why">
+    <div class="why__inner">
+      <div class="why__flag flag">&nbsp;</div>
+
+      <div class="why__left">
+        <h2 class="why__title">
+          <div class="why__question">Чому саме</div>
+          <div class="why__brand"><span class="why__yellow">Бакто</span>Віт?</div>
+        </h2>
+
+        <ul class="why__steps">
+          <li class="why__step why__step--1">
+            <div class="why__icon why__icon--bottle">&nbsp;</div>
+            <div class="why__caption">1 флакон БактоВіт</div>
+          </li>
+          <li class="why__arrow">&nbsp;</li>
+          <li class="why__step why__step--2">
+            <div class="why__icon why__icon--course">&nbsp;</div>
+            <div class="why__caption">1 курс</div>
+          </li>
+          <li class="why__arrow">&nbsp;</li>
+          <li class="why__step why__step--3">
+            <div class="why__icon why__icon--pig">&nbsp;</div>
+            <div class="why__caption">доступна ціна</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="why__right">
+        <div class="why__text">Форма випуску - капсули. Корисні мікроорганізми в кислостійкій капсулі, проникають живими прямо у кишківник.</div>
+        <div class="why__text">Короткий курс 10 днів. Зручно для пацієнта, тому що висока ймовірність того, що доп'є курс до кінця.</div>
+        <div class="why__text">Подвійна дія пробіотиків та вітамінів групи В для відновлення  опірності організму після перенесених інфекцій або антибіотикотерапії.</div>
+        <div class="why__text">Вітаміни групи В відновлюють слизові, які є «вхідними воротами» для інфекцій, беруть участь майже у всіх обмінних процесах організму.</div>
+      </div>
 
     </div>
   </div>
