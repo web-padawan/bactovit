@@ -44,7 +44,7 @@
 
       <div class="about__flag flag">&nbsp;</div>
 
-      <div class="about__title"><span class="about__brand">БактоВіт</span> - пробіотик з повним комплексом вітамінів группи В</div>
+      <h2 class="about__title"><span class="about__brand">БактоВіт</span> - пробіотик з повним комплексом вітамінів группи В</h2>
 
       <ul class="about__goals">
         <li class="about__goal about__goal--1">
@@ -252,10 +252,15 @@
 
       <div class="why__right">
         <div class="why__text">Форма випуску - капсули. Корисні мікроорганізми в кислостійкій капсулі, проникають живими прямо у кишківник.</div>
+        <div class="why__divider"><div class="why__icon why__icon--check">&nbsp;</div></div>
         <div class="why__text">Короткий курс 10 днів. Зручно для пацієнта, тому що висока ймовірність того, що доп'є курс до кінця.</div>
+        <div class="why__divider"><div class="why__icon why__icon--check">&nbsp;</div></div>
         <div class="why__text">Подвійна дія пробіотиків та вітамінів групи В для відновлення  опірності організму після перенесених інфекцій або антибіотикотерапії.</div>
+        <div class="why__divider"><div class="why__icon why__icon--check">&nbsp;</div></div>
         <div class="why__text">Вітаміни групи В відновлюють слизові, які є «вхідними воротами» для інфекцій, беруть участь майже у всіх обмінних процесах організму.</div>
       </div>
+
+      <a class="why__button" href="#">Завантажити iнструкцiю</a>
 
     </div>
   </div>

@@ -775,7 +775,7 @@ html {
 .why__right {
   float: right;
   max-width: 510px;
-  padding-top: 80px;
+  padding-top: 65px;
 }
 
 .why__question {
@@ -836,6 +836,10 @@ html {
   height: 32px;
 }
 
+.why__icon {
+  display: inline-block;
+}
+
 .why__icon--bottle {
   background-image: url("../../../images/front/sprites.png");
   background-position: 0px -135px;
@@ -857,6 +861,13 @@ html {
   height: 74px;
 }
 
+.why__icon--check {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: -194px -135px;
+  width: 23px;
+  height: 23px;
+}
+
 .why__caption {
   max-width: 70px;
   margin-top: 10px;
@@ -867,11 +878,65 @@ html {
 }
 
 .why__text {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  padding-top: 15px;
   color: #ffe223;
   font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
   line-height: 1.35;
+}
+
+.why__divider {
+  max-width: 510px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+.why__divider:before, .why__divider:after {
+  background: #fff;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  opacity: "1";
+  position: relative;
+  vertical-align: middle;
+  width: 200%;
+  z-index: -1;
+}
+
+.why__divider:before {
+  right: 5px;
+  margin: 0 0 0 -200%;
+}
+
+.why__divider:after {
+  left: 5px;
+  margin: 0 -200% 0 0;
+}
+
+.why__button {
+  display: block;
+  position: relative;
+  top: 120px;
+  width: 294px;
+  height: 53px;
+  clear: both;
+  margin: 0 auto;
+  color: #fff;
+  background: #d5bb1f;
+  border: solid 2px #fff;
+  font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 53px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.why__button:hover {
+  background: #a89419;
 }
 
 @media (max-width: 767px) {

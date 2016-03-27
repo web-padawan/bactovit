@@ -22,7 +22,7 @@
   &__right {
     float: right;
     max-width: 510px;
-    padding-top: 80px;
+    padding-top: 65px;
   }
 
   &__question {
@@ -81,6 +81,7 @@
   }
 
   &__icon {
+    display: inline-block;
 
     &--bottle {
       @include sprite($s-bottle);
@@ -90,6 +91,9 @@
     }
     &--pig {
       @include sprite($s-pig);
+    }
+    &--check {
+      @include sprite($s-check);
     }
   }
 
@@ -103,10 +107,38 @@
   }
 
   &__text {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    padding-top: 15px;
     color: #ffe223;
     font-family: $bpro;
     font-size: 20px;
     line-height: 1.35;
+  }
+
+  &__divider {
+    max-width: 510px;
+    @include line(5px, #fff);
+  }
+
+  &__button {
+    display: block;
+    position: relative;
+    top: 120px;
+    width: 294px;
+    height: 53px;
+    clear: both;
+    margin: 0 auto;
+    color: #fff;
+    background: $yellow2;
+    border: solid 2px #fff;
+    font-family: $bpro;
+    font-size: 16px;
+    line-height: 53px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background: darken($yellow2, 10%);
+    }
   }
 }
