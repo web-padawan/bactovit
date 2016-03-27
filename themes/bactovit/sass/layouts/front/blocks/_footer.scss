@@ -1,7 +1,26 @@
 .footer {
+  padding: 70px 0 100px;
   background: $gray-mid;
 
   &__inner {
     @include container;
+  }
+
+  &__content {
+    margin-left: 70px;
+    padding-left: 30px;
+    border-left: solid 1px $yellow;
+  }
+
+  &__text {
+    margin: 8px 0 28px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: $bpro;
+  }
+
+  &__yellow {
+    color: $yellow
   }
 }
