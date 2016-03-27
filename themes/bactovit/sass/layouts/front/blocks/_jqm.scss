@@ -5,7 +5,7 @@
   position: fixed;
 
   &.vitpopup {
-    @include breakpoint(max-width $md - 1) {
+    @include breakpoint(max-width 1023px) {
       top: 5%;
       left: 5%;
       right: 5%;
@@ -19,7 +19,7 @@
   left: -50%;
 
   .vitpopup & {
-    @include breakpoint(max-width $md - 1) {
+    @include breakpoint(max-width 1023px) {
       left: initial;
     }
   }

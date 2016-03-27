@@ -2,7 +2,7 @@
   padding: 25px 0 15px;
   text-align: center;
 
-  @include breakpoint($md) {
+  @include breakpoint(1024px) {
     max-width: 720px;
   }
 
@@ -22,7 +22,7 @@
     font-size: 17px;
     line-height: 1.5;
 
-    @include breakpoint(max-width $md - 1) {
+    @include breakpoint(max-width 1023px) {
       font-size: 13px;
     }
     &--func {

@@ -401,8 +401,8 @@ html {
 .contact__title {
   float: left;
   max-width: 40%;
-  margin-top: 40px;
-  margin-left: 18%;
+  margin-top: 70px;
+  margin-left: 12%;
   padding-right: 20px;
   vertical-align: top;
   color: #fff;
@@ -418,22 +418,27 @@ html {
 .contact__form {
   float: left;
   width: 45%;
-  padding-top: 40px;
-  padding-left: 15px;
+  margin-bottom: 15px;
+  padding-top: 75px;
+  padding-left: 45px;
 }
 
 .contact__small {
-  font-size: 28px;
+  font-size: 32px;
+  position: relative;
+  right: 60px;
 }
 
 .contact__large {
-  font-size: 54px;
-  line-height: 0.7;
+  font-size: 78px;
+  line-height: 0.5;
+  font-weight: bold;
+  letter-spacing: 0.06em;
 }
 
 .contact__fio {
   float: left;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .question .contact__fio {
@@ -454,7 +459,7 @@ html {
   float: right;
   margin: 0;
   position: relative;
-  top: -45px;
+  top: -48px;
   font-size: 14px;
   border-radius: 5px;
 }
@@ -465,17 +470,58 @@ html {
 }
 
 .contact__input {
-  max-width: 190px;
+  max-width: 225px;
   margin: 0;
-  padding: 6px 6px 6px 12px;
-  font-size: 14px;
+  padding: 8px 6px 8px 24px;
+  font-family: "PTSans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   border: solid 1px #fff;
   border-radius: 5px;
+}
+
+.contact__input::-webkit-input-placeholder {
+  color: #9c9c9c;
+  font-style: italic;
+}
+
+.contact__input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #9c9c9c;
+  font-style: italic;
+}
+
+.contact__input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9c9c9c;
+  font-style: italic;
+}
+
+.contact__input:-ms-input-placeholder {
+  color: #9c9c9c;
+  font-style: italic;
 }
 
 .contact__input:focus {
   outline: none;
   border: solid 1px #999;
+}
+
+.contact__input:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contact__input:focus:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+
+.contact__input:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+.contact__input:focus:-ms-input-placeholder {
+  color: #fff;
 }
 
 .question .contact__input:focus {
@@ -487,18 +533,59 @@ html {
 }
 
 .contact__textarea {
-  max-width: 200px;
-  max-height: 75px;
+  max-width: 225px;
+  max-height: 87px;
   margin: 0;
-  padding: 12px 6px 6px 12px;
-  font-size: 14px;
+  padding: 6px 12px;
+  font-family: "PTSans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
   border: solid 1px #fff;
   border-radius: 5px;
+}
+
+.contact__textarea::-webkit-input-placeholder {
+  color: #9c9c9c;
+  font-style: italic;
+}
+
+.contact__textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #9c9c9c;
+  font-style: italic;
+}
+
+.contact__textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9c9c9c;
+  font-style: italic;
+}
+
+.contact__textarea:-ms-input-placeholder {
+  color: #9c9c9c;
+  font-style: italic;
 }
 
 .contact__textarea:focus {
   outline: none;
   border: solid 1px #999;
+}
+
+.contact__textarea:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.contact__textarea:focus:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+
+.contact__textarea:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+.contact__textarea:focus:-ms-input-placeholder {
+  color: #fff;
 }
 
 .question .contact__textarea:focus {
@@ -512,7 +599,7 @@ html {
 }
 
 .contact .webform-client-form {
-  max-width: 410px;
+  max-width: 470px;
   overflow: hidden;
 }
 
@@ -524,15 +611,21 @@ html {
 
 .contact .form-submit {
   position: relative;
-  top: -38px;
-  width: 200px;
-  padding: 7px 20px;
+  top: -40px;
+  width: 225px;
+  padding: 11px 20px;
+  background: #fac819;
   color: #fff;
   font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
+  box-shadow: 0 5px 0 #b6941b;
+}
+
+.contact .form-submit:hover {
+  background: #dbac05;
 }
 
 .flag {
@@ -1032,7 +1125,7 @@ html {
   }
 
   .contact__small {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .contact__large {
