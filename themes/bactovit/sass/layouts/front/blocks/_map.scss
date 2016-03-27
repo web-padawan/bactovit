@@ -1,0 +1,105 @@
+.map {
+  padding-top: 52px;
+
+  @include breakpoint(max-width 639px) {
+    padding-top: 25px;
+  }
+
+  &__inner {
+    @include container;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: $gray-mid;
+    font-family: $bpro;
+    font-size: 27px;
+    text-align: center;
+
+    @include breakpoint(max-width 639px) {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    @include breakpoint(640px 767px) {
+      font-size: 24px;
+    }
+  }
+
+  &__address {
+    text-align: center;
+
+    @include breakpoint(1024px) {
+      float: left;
+      max-width: 30%;
+      padding-top: 45px;
+      padding-left: 90px;
+      text-align: left;
+    }
+  }
+
+  &__caption {
+    color: #108e96;
+    font-family: $ptserif;
+    font-size: 30px;
+    font-style: italic;
+
+    @include breakpoint(max-width 639px) {
+      display: none;
+    }
+    @include breakpoint(640px 767px) {
+      font-size: 24px;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    margin: 42px 0;
+
+    @include breakpoint(max-width 639px) {
+      margin: 7px 0;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    min-height: 390px;
+    margin-top: 10px;
+
+    @include breakpoint(1024px) {
+      float: right;
+      width: 69%;
+    }
+  }
+
+  &__frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  &__link {
+    color: #5c5c5c;
+    font-family: $ptserif;
+    font-size: 14px;
+    font-style: italic;
+
+    @include breakpoint(1024px) {
+      font-size: 18px;
+    }
+    &:hover {
+      color: $gray-mid;
+    }
+  }
+
+  &__popover {
+    min-width: 150px;
+    min-height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}

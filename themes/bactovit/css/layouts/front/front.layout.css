@@ -858,6 +858,82 @@ html {
   color: #0387b2;
 }
 
+.map {
+  padding-top: 52px;
+}
+
+.map__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.map__title {
+  margin-bottom: 40px;
+  color: #626262;
+  font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
+  font-size: 27px;
+  text-align: center;
+}
+
+.map__address {
+  text-align: center;
+}
+
+.map__caption {
+  color: #108e96;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.map__list {
+  list-style-type: none;
+}
+
+.map__item {
+  margin: 42px 0;
+}
+
+.map__wrapper {
+  position: relative;
+  min-height: 390px;
+  margin-top: 10px;
+}
+
+.map__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.map__link {
+  color: #5c5c5c;
+  font-family: "PTSerif", "Times New Roman", serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.map__link:hover {
+  color: #626262;
+}
+
+.map__popover {
+  min-width: 150px;
+  min-height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
 .modal {
   padding: 25px 0 15px;
   text-align: center;
@@ -1203,6 +1279,23 @@ html {
     display: inline-block;
     font-size: 18px;
   }
+
+  .map {
+    padding-top: 25px;
+  }
+
+  .map__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .map__caption {
+    display: none;
+  }
+
+  .map__item {
+    margin: 7px 0;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -1216,6 +1309,14 @@ html {
   .contact__large {
     display: inline-block;
     line-height: 1;
+    font-size: 24px;
+  }
+
+  .map__title {
+    font-size: 24px;
+  }
+
+  .map__caption {
     font-size: 24px;
   }
 }
@@ -1238,6 +1339,23 @@ html {
 }
 
 @media (min-width: 1024px) {
+
+  .map__address {
+    float: left;
+    max-width: 30%;
+    padding-top: 45px;
+    padding-left: 90px;
+    text-align: left;
+  }
+
+  .map__wrapper {
+    float: right;
+    width: 69%;
+  }
+
+  .map__link {
+    font-size: 18px;
+  }
 
   .modal {
     max-width: 720px;

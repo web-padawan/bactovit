@@ -310,6 +310,24 @@
     </div>
   </div>
 
+  <div id="address" class="map">
+    <div class="map__inner">
+      <h2 class="map__title">Де купити</h2>
+      <div class="map__address">
+        <h3 class="map__caption">Мережа аптек:</h3>
+        <ul class="map__list">
+          <li class="map__item"><a id="pharmAcademy" href="#" class="map__link">Аптека Медичної академії</a></li>
+          <li class="map__item"><a id="pharmLowPrice" href="#" class="map__link">Аптека низьких цін</a></li>
+          <li class="map__item"><a id="pharmNeboley" href="#" class="map__link">Аптека «Не болей»</a></li>
+          <li class="map__item"><a id="pharmRuan" href="#" class="map__link">Аптека «Руан»</a></li>
+        </ul>
+      </div>
+      <div class="map__wrapper">
+        <div class="map__frame" id="map">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="footer__inner">
 

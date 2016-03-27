@@ -1,9 +1,9 @@
 (function($){
   $(document).ready(function(){
 
-    // var script = document.createElement('script');
-    // script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBsRc02ErDI2eUFcdRpmTMlgSSKYjzkfrY&libraries=places&callback=initMap";
-    // document.body.appendChild(script);
+    var script = document.createElement('script');
+    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBsRc02ErDI2eUFcdRpmTMlgSSKYjzkfrY&libraries=places&callback=initMap";
+    document.body.appendChild(script);
 
     // messages popup
     var $msg = $('#popup-messages');
@@ -49,24 +49,24 @@
       }, 300);
     });
 
-    // $('#pharmAcademy').on('click', function(ev) {
-    //   ev.preventDefault();
-    //   initMap('аптека медицинской академии');
-    // });
+    $('#pharmAcademy').on('click', function(ev) {
+      ev.preventDefault();
+      initMap('аптека медицинской академии');
+    });
 
-    // $('#pharmNeboley').on('click', function(ev) {
-    //   ev.preventDefault();
-    //   initMap('аптека не болей');
-    // });
+    $('#pharmNeboley').on('click', function(ev) {
+      ev.preventDefault();
+      initMap('аптека не болей');
+    });
 
-    // $('#pharmLowPrice').on('click', function(ev) {
-    //   ev.preventDefault();
-    //   initMap('аптека низких цен');
-    // });
+    $('#pharmLowPrice').on('click', function(ev) {
+      ev.preventDefault();
+      initMap('аптека низких цен');
+    });
 
-    // $('#pharmRuan').on('click', function(ev) {
-    //   ev.preventDefault();
-    //   initMap('аптека руан');
-    // });
+    $('#pharmRuan').on('click', function(ev) {
+      ev.preventDefault();
+      initMap('аптека руан');
+    });
   });
 })(jQuery);
