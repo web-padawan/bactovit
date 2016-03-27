@@ -39,7 +39,7 @@
     </div>
   </header>
 
-  <div class="about">
+  <div id="about" class="about">
     <div class="about__inner">
 
       <div class="about__flag flag">&nbsp;</div>
@@ -222,7 +222,7 @@
     </div>
   </div>
 
-  <div class="why">
+  <div id="why" class="why">
     <div class="why__inner">
       <div class="why__flag flag">&nbsp;</div>
 
@@ -264,7 +264,7 @@
     </div>
   </div>
 
-  <div class="capsule">
+  <div id="capsule" class="capsule">
     <div class="capsule__inner">
       <div class="capsule__flag flag">&nbsp;</div>
       <div class="capsule__text">
@@ -299,7 +299,7 @@
     </div>
   </div>
 
-  <div class="usage">
+  <div id="usage" class="usage">
     <div class="usage__inner">
       <div class="usage__flag flag">&nbsp;</div>
       <h2 class="usage__title">Спосіб вживання:</h2>

@@ -45,7 +45,7 @@
     $('#down').on('click', function(ev) {
       ev.preventDefault();
       $('html, body').animate({
-        scrollTop: $("#pros").offset().top + 40
+        scrollTop: $("#about").offset().top + 25
       }, 300);
     });
 

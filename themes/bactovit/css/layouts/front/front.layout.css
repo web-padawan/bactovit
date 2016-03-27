@@ -818,6 +818,10 @@ html {
   height: 58px;
 }
 
+.header__down:focus {
+  text-decoration: none;
+}
+
 .jqmWindow {
   display: none;
   left: 50%;
