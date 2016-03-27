@@ -312,14 +312,14 @@ html {
 
 .about__circle--gold {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -50px -135px;
+  background-position: -245px -155px;
   width: 42px;
   height: 42px;
 }
 
 .about__circle--blue {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -134px -135px;
+  background-position: -245px -113px;
   width: 42px;
   height: 42px;
 }
@@ -775,14 +775,14 @@ html {
 
 .header__icon--vkontakte {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -107px -74px;
+  background-position: -245px -71px;
   width: 43px;
   height: 42px;
 }
 
 .header__icon--facebook {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -92px -135px;
+  background-position: -107px -74px;
   width: 42px;
   height: 42px;
 }
@@ -824,7 +824,7 @@ html {
   top: 7px;
   right: 7px;
   background-image: url("../../../images/front/sprites.png");
-  background-position: -150px -74px;
+  background-position: -149px -74px;
   width: 28px;
   height: 28px;
 }
@@ -882,6 +882,65 @@ html {
 
 .modal__text--func {
   margin-top: 20px;
+}
+
+.usage {
+  background: url("../../../images/front/bg/usage.jpg") no-repeat center top;
+  height: 520px;
+}
+
+.usage__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.usage__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.usage__flag {
+  position: absolute;
+  right: 0;
+}
+
+.usage__title {
+  position: relative;
+  left: 70px;
+  padding-top: 175px;
+  color: #606060;
+  font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
+  font-size: 27px;
+  text-align: center;
+}
+
+.usage__content {
+  float: right;
+  margin-top: 100px;
+  max-width: 550px;
+  margin-right: 155px;
+  padding-top: 12px;
+}
+
+.usage__icon {
+  background-image: url("../../../images/front/sprites.png");
+  background-position: 0px -135px;
+  width: 62px;
+  height: 63px;
+  float: left;
+  margin: 10px 35px 0 10px;
+}
+
+.usage__text {
+  color: #fff;
+  font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 1.35;
+  font-style: italic;
 }
 
 .why {
@@ -974,7 +1033,7 @@ html {
   display: inline-block;
   margin: 24px 12px 0;
   background-image: url("../../../images/front/sprites.png");
-  background-position: -176px -135px;
+  background-position: -62px -135px;
   width: 18px;
   height: 32px;
 }
@@ -985,7 +1044,7 @@ html {
 
 .why__icon--bottle {
   background-image: url("../../../images/front/sprites.png");
-  background-position: 0px -135px;
+  background-position: -245px 0px;
   width: 50px;
   height: 71px;
 }
@@ -1006,7 +1065,7 @@ html {
 
 .why__icon--check {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -194px -135px;
+  background-position: -80px -135px;
   width: 23px;
   height: 23px;
 }

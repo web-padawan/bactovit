@@ -1,0 +1,46 @@
+.usage {
+  background: url('../../../images/front/bg/usage.jpg') no-repeat center top;
+  height: 520px;
+
+  &__inner {
+    @include container;
+    position: relative;
+  }
+
+  &__flag {
+    position: absolute;
+    right: 0;
+  }
+
+  &__title {
+    position: relative;
+    left: 70px;
+    padding-top: 175px;
+    color: #606060;
+    font-family: $bpro;
+    font-size: 27px;
+    text-align: center;
+  }
+
+  &__content {
+    float: right;
+    margin-top: 100px;
+    max-width: 550px;
+    margin-right: 155px;
+    padding-top: 12px;
+  }
+
+  &__icon {
+    @include sprite($s-circle-big);
+    float: left;
+    margin: 10px 35px 0 10px;
+  }
+
+  &__text {
+    color: #fff;
+    font-family: $bpro;
+    font-size: 22px;
+    line-height: 1.35;
+    font-style: italic;
+  }
+}

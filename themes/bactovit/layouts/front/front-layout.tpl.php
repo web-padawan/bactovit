@@ -285,19 +285,27 @@
 
   <div class="contact">
     <div class="contact__inner">
-
       <h3 class="contact__title">
         <div class="contact__small">Виникли</div>
         <div class="contact__large">питання?</div>
       </h3>
-
       <a id="question" class="contact__button" href="javascript:void(0);">Задати питання</a>
-
       <div class="contact__form">
         <?php
           $block = module_invoke('webform', 'block_view', 'client-block-2');
           print render($block['content']);
         ?>
+      </div>
+    </div>
+  </div>
+
+  <div class="usage">
+    <div class="usage__inner">
+      <div class="usage__flag flag">&nbsp;</div>
+      <h2 class="usage__title">Спосіб вживання:</h2>
+      <div class="usage__content">
+        <div class="usage__icon">&nbsp;</div>
+        <div class="usage__text">Дорослим та дітям віком від 3 років по&nbsp;<b>1&nbsp;капсулі</b> 3 рази на день за 30 хвилин до прийому їжі.</div>
       </div>
     </div>
   </div>
