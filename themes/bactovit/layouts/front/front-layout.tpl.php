@@ -231,7 +231,6 @@
           <div class="why__question">Чому саме</div>
           <div class="why__brand"><span class="why__yellow">Бакто</span>Віт?</div>
         </h2>
-
         <ul class="why__steps">
           <li class="why__step why__step--1">
             <div class="why__icon why__icon--bottle">&nbsp;</div>
@@ -262,6 +261,25 @@
 
       <a class="why__button" href="#">Завантажити iнструкцiю</a>
 
+    </div>
+  </div>
+
+  <div class="capsule">
+    <div class="capsule__inner">
+      <div class="capsule__flag flag">&nbsp;</div>
+      <div class="capsule__text">
+        <h2 class="capsule__title">Склад 1 капсули:</h2>
+        <ul class="capsule__list">
+          <li class="capsule__item"><b>Пробіотичні культури:</b></li>
+          <li class="capsule__item">Lactococcus lactis КУО/г–1×1010;</li>
+          <li class="capsule__item">Bifidobacterium bifidum  КУО/г–1×1010;</li>
+          <li class="capsule__item">Вітамін B5– 3,4 мг, вітамін B12 (0,1%) –1 мг,</li>
+          <li class="capsule__item">вітамін B1–0,5 мг, вітамін B6–0,65 мг,</li>
+          <li class="capsule__item">вітамін B2– 0,65 мг;</li>
+          <li class="capsule__item"><b>допоміжні  речовини:</b></li>
+          <li class="capsule__item">мальтодекстрин, магнію стеарат.</li>
+        </ul>
+      </div>
     </div>
   </div>
 

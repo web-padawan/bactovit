@@ -331,6 +331,56 @@ html {
   line-height: 1.25;
 }
 
+.capsule {
+  background: url("../../../images/front/bg/capsule.jpg") no-repeat center top;
+  height: 640px;
+  color: #fff;
+}
+
+.capsule__inner {
+  max-width: 1280px;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.capsule__inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.capsule__text {
+  position: relative;
+  max-width: 525px;
+  margin-left: 180px;
+  text-align: right;
+}
+
+.capsule__title {
+  margin: 30px 0 45px;
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-size: 31px;
+}
+
+.capsule__list {
+  padding: 12px 0 28px;
+  list-style-type: none;
+  border-top: solid 1px #e4cc31;
+  border-bottom: solid 1px #e4cc31;
+}
+
+.capsule__item {
+  font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.capsule__item b {
+  font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+}
+
 .contact {
   background: #626262;
 }
