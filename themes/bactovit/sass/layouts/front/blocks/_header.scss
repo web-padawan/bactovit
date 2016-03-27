@@ -1,7 +1,19 @@
 .header {
-  background: url('../../../images/front/bg/header.jpg') no-repeat center top;
-  height: 690px;
+  background: url('../../../images/front/bg/header_sm.jpg') no-repeat center top;
+  height: 510px;
   color: #fff;
+
+  @include breakpoint(max-width 399px) {
+    background-size: cover;
+  }
+  @include breakpoint(400px 959px) {
+    height: 690px;
+    background: url('../../../images/front/bg/header_md.jpg') no-repeat center top;
+  }
+  @include breakpoint(960px) {
+    height: 690px;
+    background: url('../../../images/front/bg/header.jpg') no-repeat center top;
+  }
 
   &__inner {
     @include container;
@@ -11,12 +23,24 @@
 
   &__flag {
     position: absolute;
-    left: 315px;
+    left: 60px;
+
+    @include breakpoint(960px 1239px) {
+      left: 10px;
+    }
+    @include breakpoint(1240px) {
+      left: 315px;
+    }
   }
 
   &__nav {
-    float: right;
-    list-style-type: none;
+    display: none;
+
+    @include breakpoint(960px) {
+      display: block;
+      float: right;
+      list-style-type: none;
+    }
   }
 
   &__item {
@@ -25,11 +49,14 @@
 
   &__navlink {
     display: block;
-    padding: 50px 37px;
     color: #fff;
     font-family: $bpro-medium;
     font-size: 18px;
     text-decoration: none;
+
+    @include breakpoint(960px) {
+      padding: 50px 37px;
+    }
 
     &:hover {
       text-decoration: underline;
@@ -38,46 +65,95 @@
 
   &__text {
     position: relative;
-    top: 120px;
-    left: -40px;
-    max-width: 550px;
+    top: 290px;
+    left: 0;
+    max-width: 220px;
     margin: 0 auto;
+
+    @include breakpoint(400px 959px) {
+      top: 360px;
+      left: -40px;
+      max-width: 300px;
+    }
+    @include breakpoint(960px) {
+      top: 120px;
+      left: -40px;
+      max-width: 550px;
+    }
   }
 
   &__title {
     font-family: $bpro-medium;
-    font-size: 100px;
+    font-size: 45px;
     font-weight: bold;
     letter-spacing: 0.025em;
+
+    @include breakpoint(400px 959px) {
+      font-size: 60px;
+    }
+    @include breakpoint(960px) {
+      font-size: 100px;
+    }
   }
 
   &__caps {
-    font-size: 130px;
+    font-size: 60px;
+
+    @include breakpoint(400px 959px) {
+      font-size: 80px;
+    }
+    @include breakpoint(960px) {
+      font-size: 130px;
+    }
   }
 
   &__slogan {
-    width: 67%;
-    float: right;
-    margin-top: 5px;
     font-family: $bpro-light;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 1.2;
     font-style: italic;
+    text-align: center;
+
+    @include breakpoint(400px 959px) {
+      width: 75%;
+      float: right;
+      margin-top: 5px;
+      font-size: 24px;
+      text-align: left;
+    }
+    @include breakpoint(960px) {
+      width: 67%;
+      float: right;
+      margin-top: 5px;
+      font-size: 30px;
+      text-align: left;
+    }
   }
 
   &__buy {
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 24px 55px;
+    padding: 12px 28px;
     background: #fac819;
     color: #fff;
     font-family: $bpro-medium;
-    font-size: 28px;
+    font-size: 18px;
     border-radius: 6px;
     text-decoration: none;
     box-shadow: 0 5px 0 #b6941b;
+
+    @include breakpoint(400px 959px) {
+      bottom: 75px;
+      padding: 16px 32px;
+      font-size: 24px;
+    }
+    @include breakpoint(960px) {
+      bottom: 80px;
+      padding: 24px 55px;
+      font-size: 28px;
+    }
 
     &:hover {
       background: darken(#fac819, 10%);
@@ -86,24 +162,47 @@
 
   &__contact {
     position: absolute;
-    bottom: 32px;
-    right: 25px;
+    top: 25px;
+    right: 15px;
     text-align: right;
+
+    @include breakpoint(960px) {
+      top: auto;
+      bottom: 32px;
+      right: 25px;
+    }
   }
 
   &__phone {
     margin-right: 6px;
-    margin-bottom: 14px;
+    margin-bottom: 6px;
     font-family: $bpro-medium;
-    font-size: 30px;
+    font-size: 16px;
     letter-spacing: 0.025em;
+
+    @include breakpoint(480px 959px) {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+    @include breakpoint(960px) {
+      margin-bottom: 14px;
+      font-size: 30px;
+    }
   }
 
   &__icon {
     display: inline-block;
-    margin: 0 8px;
+    text-decoration: none;
+    transform: scale(0.85);
+    margin: 4px 0;
+
     &:hover {
       opacity: 0.8;
+    }
+
+    @include breakpoint(960px) {
+      transform: none;
+      margin: 0 8px;
     }
 
     &--vkontakte {
@@ -115,14 +214,71 @@
   }
 
   &__down {
+    @include sprite($s-down_sm);
     position: absolute;
-    bottom: -25px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    @include sprite($s-down);
+    text-decoration: none;
+
+    @include breakpoint(400px) {
+      @include sprite($s-down);
+    }
 
     &:focus {
       text-decoration: none;
+    }
+  }
+
+  &__trigger {
+    display: none;
+
+    &:checked {
+      ~ .header__nav {
+        display: block;
+        position: absolute;
+        z-index: 50;
+        margin: 0;
+        background: #2f2f31;
+        opacity: 0.9;
+        padding: 40px 35px 20px;
+        max-width: 250px;
+
+        .header__item {
+          display: block;
+          max-width: 250px;
+          padding: 20px 0px;
+          border-bottom: solid 1px #f2cf4b;
+          &--last {
+            border: none;
+          }
+        }
+
+        .header__navlink {
+          color: #fff;
+          text-decoration: none;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  // small screen - toggle
+  &__toggle {
+    @include sprite($s-toggle);
+    position: absolute;
+    z-index: 100;
+    top: 25px;
+    left: 18px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include breakpoint(960px) {
+      display: none;
     }
   }
 }

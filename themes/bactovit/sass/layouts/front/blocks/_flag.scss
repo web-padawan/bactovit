@@ -1,3 +1,7 @@
 .flag {
-  @include sprite($s-probiotic);
+  @include sprite($s-probiotic_sm);
+
+  @include breakpoint(960px) {
+    @include sprite($s-probiotic);
+  }
 }

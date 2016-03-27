@@ -5,6 +5,9 @@
 
       <div class="header__flag flag">&nbsp;</div>
 
+      <label for="toggle" class="header__toggle">&nbsp;</label>
+      <input id="toggle" type="checkbox" class="header__trigger">
+
       <ul class="header__nav">
         <li class="header__item">
           <a class="header__navlink" href="#about">БактоВіт - це...</a>
@@ -22,7 +25,7 @@
 
       <hgroup class="header__text">
         <h1 class="header__title"><span class="header__caps">Б</span>акто<span class="header__caps">В</span>іт</h1>
-        <h2 class="header__slogan">Надійний захисник вашого імунітету</h2>
+        <h2 class="header__slogan">Надійний захисник вашого&nbsp;імунітету</h2>
       </hgroup>
 
       <div class="header__contact">
