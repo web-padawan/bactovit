@@ -1045,26 +1045,27 @@ html {
 }
 
 .why__left {
-  float: left;
-  padding-top: 170px;
+  padding-top: 20px;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .why__right {
-  float: right;
-  max-width: 510px;
-  padding-top: 65px;
+  max-width: 310px;
+  margin: 0 auto;
+  background: rgba(59, 71, 93, 0.75);
+  padding: 10px 10px 15px;
 }
 
 .why__question {
-  padding-left: 60px;
+  padding-left: 30px;
   font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
-  font-size: 32px;
+  font-size: 16px;
 }
 
 .why__brand {
-  padding-left: 20px;
   font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
-  font-size: 72px;
+  font-size: 38px;
   font-weight: bold;
   line-height: 0.7;
   letter-spacing: 0.035em;
@@ -1075,8 +1076,7 @@ html {
 }
 
 .why__steps {
-  margin-top: 60px;
-  margin-left: 32px;
+  margin: 16px auto 4px;
   list-style-type: none;
 }
 
@@ -1090,27 +1090,19 @@ html {
   left: -6px;
 }
 
-.why__step--2 {
-  margin: 0 2px 0 12px;
-}
-
 .why__step--2 .why__text {
   position: relative;
   left: -6px;
   top: -3px;
 }
 
-.why__step--3 {
-  margin-left: 4px;
-}
-
 .why__arrow {
-  display: inline-block;
-  margin: 24px 12px 0;
   background-image: url("../../../images/front/sprites.png");
   background-position: -166px -74px;
   width: 18px;
   height: 32px;
+  display: inline-block;
+  margin: 24px 12px 0;
 }
 
 .why__icon {
@@ -1146,21 +1138,24 @@ html {
 }
 
 .why__caption {
-  max-width: 70px;
-  margin-top: 10px;
+  max-width: 55px;
+  margin: 0 auto;
   font-family: "PTSans", Helvetica, Arial, sans-serif;
-  font-size: 17px;
+  font-size: 11px;
   line-height: 1.25;
   text-align: center;
+  position: relative;
+  top: -10px;
 }
 
 .why__text {
-  margin-bottom: 15px;
-  padding-top: 15px;
+  margin-bottom: 4px;
+  padding-top: 4px;
   color: #ffe223;
   font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
-  font-size: 20px;
-  line-height: 1.35;
+  font-size: 11px;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .why__divider {
@@ -1196,7 +1191,7 @@ html {
 .why__button {
   display: block;
   position: relative;
-  top: 120px;
+  top: 80px;
   width: 294px;
   height: 53px;
   clear: both;
@@ -1220,6 +1215,27 @@ html {
 
   .about__inner {
     padding: 80px 0 85px;
+  }
+
+  .why__step--2 {
+    margin: 0 2px 0 12px;
+  }
+
+  .why__step--3 {
+    margin-left: 4px;
+  }
+
+  .why__caption {
+    top: 0;
+    margin: 10px 0 0;
+    font-size: 17px;
+    max-width: 70px;
+  }
+
+  .why__text {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    line-height: 1.35;
   }
 }
 
@@ -1400,6 +1416,40 @@ html {
   .about__vitamin {
     padding: 8px 0;
     margin-bottom: 6px;
+  }
+
+  .why {
+    background: url("../../../images/front/bg/why_sm.jpg") no-repeat center top;
+    height: 558px;
+    background-size: cover;
+  }
+
+  .why__title {
+    max-width: 170px;
+    margin: 5px auto 0;
+  }
+
+  .why__steps {
+    max-width: 250px;
+  }
+
+  .why__arrow {
+    margin: 24px 0 0;
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  .why__icon {
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  .why__button {
+    top: 32px;
+    width: 160px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 26px;
   }
 }
 
@@ -1655,6 +1705,42 @@ html {
   .header__toggle {
     display: none;
   }
+
+  .why__left {
+    float: left;
+    padding-top: 170px;
+    max-width: 100%;
+  }
+
+  .why__right {
+    float: right;
+    max-width: 510px;
+    padding: 65px 0 0;
+    background: transparent;
+  }
+
+  .why__question {
+    padding-left: 60px;
+    font-size: 32px;
+  }
+
+  .why__brand {
+    padding-left: 20px;
+    font-size: 72px;
+  }
+
+  .why__steps {
+    margin: 60px 0 0 32px;
+  }
+
+  .why__text {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .why__button {
+    top: 120px;
+  }
 }
 
 @media (max-width: 399px) {
@@ -1719,6 +1805,32 @@ html {
   .header__phone {
     margin-bottom: 12px;
     font-size: 24px;
+  }
+
+  .why__left {
+    max-width: 330px;
+    padding-top: 40px;
+  }
+
+  .why__right {
+    max-width: 450px;
+  }
+
+  .why__question {
+    padding-left: 40px;
+    font-size: 24px;
+  }
+
+  .why__brand {
+    font-size: 64px;
+  }
+
+  .why__steps {
+    margin: 40px 0 10px;
+  }
+
+  .why__text {
+    font-size: 16px;
   }
 }
 
