@@ -1,4 +1,4 @@
-@mixin line($space, $color: "#fff", $height: "1px", $opacity: "1") {
+@mixin line($space, $color: "#fff", $height: 1px, $opacity: "1") {
   position: relative;
   z-index: 1;
   overflow: hidden;
