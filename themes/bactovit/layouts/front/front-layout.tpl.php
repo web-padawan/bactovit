@@ -95,7 +95,9 @@
         </li>
         <li class="about__item about__item--3">
           <div class="about__vitamin">Вітамін В5</div>
-          <div class="about__text">є структурним компонентом одного з ключових речовин метаболізму&nbsp;-&nbsp;коферменту&nbsp;А</div>
+          <div class="about__text">є структурним компонентом одного з ключових речовин<br>
+            <div class="about__hack">метаболізму -&nbsp;коферменту&nbsp;А</div>
+          </div>
           <a class="about__link" data-target="B5" href="#">Детальніше →</a>
         </li>
         <li class="about__item about__item--4">
