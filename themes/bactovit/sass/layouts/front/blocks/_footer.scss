@@ -1,23 +1,48 @@
 .footer {
-  padding: 70px 0 100px;
+  padding: 45px 20px 50px;
   background: $gray-mid;
 
+  @include breakpoint(960px) {
+    padding: 70px 0 100px;
+  }
   &__inner {
     @include container;
   }
 
   &__content {
-    margin-left: 70px;
-    padding-left: 30px;
-    border-left: solid 1px $yellow;
+
+    @include breakpoint(960px) {
+      margin-left: 70px;
+      padding-left: 30px;
+      border-left: solid 1px $yellow;
+    }
   }
 
   &__text {
-    margin: 8px 0 28px;
+    margin: 0;
     color: #fff;
-    font-size: 18px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.9;
     font-family: $bpro;
+    text-align: center;
+
+    @include breakpoint(960px) {
+      margin: 8px 0 28px;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    &--importer {
+      @include breakpoint(max-width 959px) {
+        margin-top: 35px;
+      }
+    }
+
+    &--last {
+      @include breakpoint(max-width 959px) {
+        margin-top: 10px;
+      }
+    }
   }
 
   &__yellow {

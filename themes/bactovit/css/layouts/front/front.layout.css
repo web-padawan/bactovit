@@ -505,7 +505,7 @@ html {
 }
 
 .footer {
-  padding: 70px 0 100px;
+  padding: 45px 20px 50px;
   background: #626262;
 }
 
@@ -522,18 +522,13 @@ html {
   clear: both;
 }
 
-.footer__content {
-  margin-left: 70px;
-  padding-left: 30px;
-  border-left: solid 1px #e4cc31;
-}
-
 .footer__text {
-  margin: 8px 0 28px;
+  margin: 0;
   color: #fff;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.9;
   font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
+  text-align: center;
 }
 
 .footer__yellow {
@@ -840,7 +835,7 @@ html {
 }
 
 .map__item {
-  margin: 42px 0;
+  margin: 7px 0;
 }
 
 .map__wrapper {
@@ -1359,6 +1354,10 @@ html {
     text-align: left;
   }
 
+  .map__item {
+    margin: 42px 0;
+  }
+
   .map__wrapper {
     float: right;
     width: 69%;
@@ -1610,6 +1609,22 @@ html {
     height: 135px;
   }
 
+  .footer {
+    padding: 70px 0 100px;
+  }
+
+  .footer__content {
+    margin-left: 70px;
+    padding-left: 30px;
+    border-left: solid 1px #e4cc31;
+  }
+
+  .footer__text {
+    margin: 8px 0 28px;
+    font-size: 18px;
+    text-align: left;
+  }
+
   .header {
     height: 690px;
     background: url("../../../images/front/bg/header.jpg") no-repeat center top;
@@ -1680,8 +1695,9 @@ html {
   }
 
   .usage__title {
-    padding-top: 175px;
+    max-width: 250px;
     margin: 0 auto;
+    padding-top: 175px;
     position: relative;
     left: 70px;
     font-size: 27px;
@@ -1815,6 +1831,17 @@ html {
   }
 }
 
+@media (max-width: 959px) {
+
+  .footer__text--importer {
+    margin-top: 35px;
+  }
+
+  .footer__text--last {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 399px) {
 
   .header {
@@ -1903,19 +1930,30 @@ html {
 
   .map {
     padding-top: 25px;
+    background: #626262;
   }
 
   .map__title {
     margin-bottom: 20px;
     font-size: 18px;
+    color: #fff;
   }
 
   .map__caption {
     display: none;
   }
 
-  .map__item {
-    margin: 7px 0;
+  .map__wrapper {
+    margin-top: 20px;
+    min-height: 220px;
+  }
+
+  .map__link {
+    color: #fff;
+  }
+
+  .map__link:hover {
+    color: #dcdcdc;
   }
 }
 
@@ -1927,6 +1965,13 @@ html {
 
   .map__caption {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+
+  .map__item {
+    margin: 20px 0;
   }
 }
 

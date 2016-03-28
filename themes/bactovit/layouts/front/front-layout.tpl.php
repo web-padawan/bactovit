@@ -343,8 +343,8 @@
           «Амбе Лімітед т/а Амбе Медікал Груп», Великобританія, «Ambe Limited t/a Ambe Medical Group»,
           Ambe House, Commerce Way, Edenbridge, Kent TN8 6ED, United Kingdom, tel:&nbsp;01732 760 900.
         </p>
-        <p class="footer__text"><em class="footer__yellow">Імпортер:</em> ТОВ «БаДМ», Україна, 49005, м. Дніпропетровськ, вул. Панікахи, 2,<br>тел.(056)747-01-10.</p>
-        <p class="footer__text">
+        <p class="footer__text footer__text--importer"><em class="footer__yellow">Імпортер:</em> ТОВ «БаДМ», Україна, 49005, м. Дніпропетровськ, вул. Панікахи, 2,<br>тел.(056)747-01-10.</p>
+        <p class="footer__text footer__text--last">
           <em class="footer__yellow">БЕЗ ГМО.</em>
           <br>Висновок державної санітарно-епідеміологічної експертизи №05.03.02-03/65903 від 28.10.2014р.
         </p>

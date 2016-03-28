@@ -3,6 +3,7 @@
 
   @include breakpoint(max-width 639px) {
     padding-top: 25px;
+    background: $gray-mid;
   }
 
   &__inner {
@@ -19,6 +20,7 @@
     @include breakpoint(max-width 639px) {
       margin-bottom: 20px;
       font-size: 18px;
+      color: #fff;
     }
     @include breakpoint(640px 767px) {
       font-size: 24px;
@@ -56,10 +58,13 @@
   }
 
   &__item {
-    margin: 42px 0;
+    margin: 7px 0;
 
-    @include breakpoint(max-width 639px) {
-      margin: 7px 0;
+    @include breakpoint(640px 1023px) {
+      margin: 20px 0;
+    }
+    @include breakpoint(1024px) {
+      margin: 42px 0;
     }
   }
 
@@ -68,6 +73,10 @@
     min-height: 495px;
     margin-top: 10px;
 
+    @include breakpoint(max-width 639px) {
+      margin-top: 20px;
+      min-height: 220px;
+    }
     @include breakpoint(1024px) {
       float: right;
       width: 69%;
@@ -88,11 +97,18 @@
     font-size: 14px;
     font-style: italic;
 
+    @include breakpoint(max-width 639px) {
+      color: #fff;
+    }
     @include breakpoint(1024px) {
       font-size: 18px;
     }
     &:hover {
       color: $gray-mid;
+
+      @include breakpoint(max-width 639px) {
+        color: #dcdcdc;
+      }
     }
   }
 
