@@ -35,7 +35,7 @@
   }
 
   &__form {
-    margin: 0 auto 15px;
+    margin: 0 auto;
 
     @include breakpoint(max-width 479px) {
       text-align: center;

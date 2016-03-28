@@ -1,6 +1,18 @@
 .usage {
-  background: url('../../../images/front/bg/usage.jpg') no-repeat center top;
-  height: 520px;
+  background: url('../../../images/front/bg/usage_sm.jpg') no-repeat center top;
+  height: 483px;
+
+  @include breakpoint(max-width 359px) {
+    background-size: cover;
+  }
+  @include breakpoint(360px 959px) {
+    background: url('../../../images/front/bg/usage_md.jpg') no-repeat center top;
+    height: 520px;
+  }
+  @include breakpoint(960px) {
+    background: url('../../../images/front/bg/usage.jpg') no-repeat center top;
+    height: 520px;
+  }
 
   &__inner {
     @include container;
@@ -10,38 +22,83 @@
   &__flag {
     position: absolute;
     right: 0;
+
+    @include breakpoint(max-width 479px) {
+      display: none;
+    }
   }
 
   &__title {
-    position: relative;
-    left: 70px;
-    max-width: 250px;
-    margin: 0 auto;
-    padding-top: 175px;
+    padding-top: 30px;
     color: #606060;
     font-family: $bpro;
-    font-size: 27px;
-   }
+    font-size: 16px;
+    text-align: center;
+
+    @include breakpoint(360px 959px) {
+      max-width: 225px;
+      padding-top: 30px;
+      font-size: 24px;
+      margin: 0 auto;
+    }
+    @include breakpoint(960px) {
+      padding-top: 175px;
+      margin: 0 auto;
+      position: relative;
+      left: 70px;
+      font-size: 27px;
+    }
+  }
 
   &__content {
-    float: left;
-    margin-top: 100px;
-    margin-left: 45%;
-    max-width: 550px;
-    padding-top: 12px;
+    max-width: 180px;
+    margin: 30px auto 0;
+    padding: 0 10px 15px;
+    text-align: center;
+
+    @include breakpoint(360px 959px) {
+      max-width: 210px;
+      margin: 20px auto 0;
+      background: #474b85;
+    }
+    @include breakpoint(960px) {
+      float: left;
+      margin-top: 100px;
+      margin-left: 45%;
+      max-width: 550px;
+      padding: 12px 0 0;
+      text-align: left;
+    }
   }
 
   &__icon {
     @include sprite($s-circle-big);
-    float: left;
-    margin: 10px 35px 0 10px;
+    display: inline-block;
+    transform: scale(0.5);
+
+    @include breakpoint(960px) {
+      transform: none;
+      float: left;
+      margin: 10px 35px 0 10px;
+    }
   }
 
   &__text {
     color: #fff;
     font-family: $bpro;
-    font-size: 22px;
+    font-size: 14px;
     line-height: 1.35;
     font-style: italic;
+
+    @include breakpoint(max-width 359px) {
+      position: relative;
+      top: -8px;
+    }
+    @include breakpoint(360px 959px) {
+      font-size: 15px;
+    }
+    @include breakpoint(960px) {
+      font-size: 22px;
+    }
   }
 }

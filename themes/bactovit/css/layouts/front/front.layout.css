@@ -147,7 +147,7 @@ html {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px 0 35px;
+  padding: 50px 0 40px;
   position: relative;
 }
 
@@ -200,10 +200,10 @@ html {
 }
 
 .about__item {
-  width: 30%;
+  width: 31%;
   display: inline-block;
   height: 150px;
-  margin: 0 0 8px 4px;
+  margin: 0 0 6px 2px;
   vertical-align: top;
   background: #dbdbdb;
   padding: 5px;
@@ -335,7 +335,7 @@ html {
 }
 
 .contact__form {
-  margin: 0 auto 15px;
+  margin: 0 auto;
 }
 
 .contact__small {
@@ -902,8 +902,8 @@ html {
 }
 
 .usage {
-  background: url("../../../images/front/bg/usage.jpg") no-repeat center top;
-  height: 520px;
+  background: url("../../../images/front/bg/usage_sm.jpg") no-repeat center top;
+  height: 483px;
 }
 
 .usage__inner {
@@ -926,22 +926,18 @@ html {
 }
 
 .usage__title {
-  position: relative;
-  left: 70px;
-  max-width: 250px;
-  margin: 0 auto;
-  padding-top: 175px;
+  padding-top: 30px;
   color: #606060;
   font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
-  font-size: 27px;
+  font-size: 16px;
+  text-align: center;
 }
 
 .usage__content {
-  float: left;
-  margin-top: 100px;
-  margin-left: 45%;
-  max-width: 550px;
-  padding-top: 12px;
+  max-width: 180px;
+  margin: 30px auto 0;
+  padding: 0 10px 15px;
+  text-align: center;
 }
 
 .usage__icon {
@@ -949,14 +945,15 @@ html {
   background-position: -59px -135px;
   width: 62px;
   height: 63px;
-  float: left;
-  margin: 10px 35px 0 10px;
+  display: inline-block;
+  -ms-transform: scale(0.5);
+      transform: scale(0.5);
 }
 
 .usage__text {
   color: #fff;
   font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 1.35;
   font-style: italic;
 }
@@ -1317,6 +1314,8 @@ html {
   }
 
   .about__vitamin {
+    margin-bottom: 10px;
+    padding: 12px 0;
     font-size: 16px;
   }
 
@@ -1387,8 +1386,9 @@ html {
   }
 
   .about__item {
-    height: 210px;
+    height: 190px;
     padding: 10px;
+    margin: 0 0 8px 4px;
   }
 }
 
@@ -1417,6 +1417,10 @@ html {
   .contact .form-textarea-wrapper {
     max-width: 250px;
     margin: 0 auto;
+  }
+
+  .usage__flag {
+    display: none;
   }
 
   .why {
@@ -1670,6 +1674,39 @@ html {
     display: none;
   }
 
+  .usage {
+    background: url("../../../images/front/bg/usage.jpg") no-repeat center top;
+    height: 520px;
+  }
+
+  .usage__title {
+    padding-top: 175px;
+    margin: 0 auto;
+    position: relative;
+    left: 70px;
+    font-size: 27px;
+  }
+
+  .usage__content {
+    float: left;
+    margin-top: 100px;
+    margin-left: 45%;
+    max-width: 550px;
+    padding: 12px 0 0;
+    text-align: left;
+  }
+
+  .usage__icon {
+    -ms-transform: none;
+    transform: none;
+    float: left;
+    margin: 10px 35px 0 10px;
+  }
+
+  .usage__text {
+    font-size: 22px;
+  }
+
   .why__left {
     float: left;
     padding-top: 170px;
@@ -1890,5 +1927,42 @@ html {
 
   .map__caption {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 359px) {
+
+  .usage {
+    background-size: cover;
+  }
+
+  .usage__text {
+    position: relative;
+    top: -8px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 959px) {
+
+  .usage {
+    background: url("../../../images/front/bg/usage_md.jpg") no-repeat center top;
+    height: 520px;
+  }
+
+  .usage__title {
+    max-width: 225px;
+    padding-top: 30px;
+    font-size: 24px;
+    margin: 0 auto;
+  }
+
+  .usage__content {
+    max-width: 210px;
+    margin: 20px auto 0;
+    background: #474b85;
+  }
+
+  .usage__text {
+    font-size: 15px;
   }
 }
