@@ -1620,7 +1620,7 @@ html {
   }
 
   .footer__text {
-    margin: 8px 0 28px;
+    margin: 8px 0 20px;
     font-size: 18px;
     text-align: left;
   }
@@ -1806,7 +1806,7 @@ html {
     width: 45%;
     max-width: 45%;
     margin: 0 0 15px;
-    padding: 75px 0 0 45px;
+    padding: 75px 0 0 35px;
   }
 
   .contact__small {
