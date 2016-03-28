@@ -3,21 +3,46 @@
   height: 640px;
   color: #fff;
 
+  @include breakpoint(max-width 479px) {
+    background: url('../../../images/front/bg/capsule_sm.jpg') no-repeat center top;
+    height: 367px;
+    background-size: cover;
+  }
+
   &__inner {
     @include container;
   }
 
   &__text {
-    position: relative;
-    max-width: 525px;
-    margin-left: 180px;
-    text-align: right;
+    max-width: 230px;
+
+    @include breakpoint(480px 959px) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    @include breakpoint(960px) {
+      max-width: 525px;
+      margin-left: 180px;
+      text-align: right;
+    }
   }
 
   &__title {
-    margin: 30px 0 45px;
+    margin: 20px 0;
     font-family: $bpro-medium;
-    font-size: 31px;
+    font-size: 18px;
+    padding-left: 18px;
+
+    @include breakpoint(480px 959px) {
+      margin: 20px 0 35px;
+      padding: 0;
+      font-size: 24px;
+    }
+    @include breakpoint(960px) {
+      margin: 30px 0 45px;
+      padding: 0;
+      font-size: 31px;
+    }
   }
 
   &__list {
@@ -25,12 +50,25 @@
     list-style-type: none;
     border-top: solid 1px $yellow;
     border-bottom: solid 1px $yellow;
+
+    @include breakpoint(max-width 479px) {
+      padding: 6px 6px 6px 12px;
+    }
   }
 
   &__item {
     font-family: $bpro;
-    font-size: 24px;
-    line-height: 1.6;
+    font-size: 11px;
+    line-height: 1.8;
+
+    @include breakpoint(480px 959px) {
+      font-size: 20px;
+      line-height: 1.6;
+    }
+    @include breakpoint(960px) {
+      font-size: 24px;
+      line-height: 1.6;
+    }
 
     b {
       font-family: $bpro-medium;

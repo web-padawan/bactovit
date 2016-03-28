@@ -278,16 +278,14 @@ html {
 }
 
 .capsule__text {
-  position: relative;
-  max-width: 525px;
-  margin-left: 180px;
-  text-align: right;
+  max-width: 230px;
 }
 
 .capsule__title {
-  margin: 30px 0 45px;
+  margin: 20px 0;
   font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
-  font-size: 31px;
+  font-size: 18px;
+  padding-left: 18px;
 }
 
 .capsule__list {
@@ -299,8 +297,8 @@ html {
 
 .capsule__item {
   font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
-  font-size: 24px;
-  line-height: 1.6;
+  font-size: 11px;
+  line-height: 1.8;
 }
 
 .capsule__item b {
@@ -326,11 +324,9 @@ html {
 }
 
 .contact__title {
-  float: left;
-  max-width: 40%;
-  margin-top: 70px;
-  margin-left: 12%;
-  padding-right: 20px;
+  margin: 0 auto 36px;
+  max-width: 200px;
+  padding: 48px 0 0;
   vertical-align: top;
   color: #fff;
   font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
@@ -338,66 +334,39 @@ html {
   text-align: right;
 }
 
-.contact__button {
-  display: none;
-}
-
 .contact__form {
-  float: left;
-  width: 45%;
-  margin-bottom: 15px;
-  padding-top: 75px;
-  padding-left: 45px;
+  margin: 0 auto 15px;
 }
 
 .contact__small {
-  font-size: 32px;
+  font-size: 18px;
   position: relative;
-  right: 60px;
+  right: 25px;
 }
 
 .contact__large {
-  font-size: 78px;
+  font-size: 36px;
   line-height: 0.5;
   font-weight: bold;
   letter-spacing: 0.06em;
 }
 
 .contact__fio {
-  float: left;
-  margin-bottom: 10px;
-}
-
-.question .contact__fio {
-  float: none;
+  margin-bottom: 12px;
 }
 
 .contact__email {
-  float: left;
-  clear: left;
-  margin: 0;
-}
-
-.question .contact__email {
-  float: none;
+  margin-bottom: 12px;
 }
 
 .contact__text {
-  float: right;
-  margin: 0;
-  position: relative;
-  top: -48px;
-  font-size: 14px;
+  margin-bottom: 15px;
+  font-size: 16px;
   border-radius: 5px;
 }
 
-.question .contact__text {
-  float: none;
-  position: static;
-}
-
 .contact__input {
-  max-width: 225px;
+  max-width: 250px;
   margin: 0;
   padding: 8px 6px 8px 24px;
   font-family: "PTSans", Helvetica, Arial, sans-serif;
@@ -451,18 +420,9 @@ html {
   color: #fff;
 }
 
-.question .contact__input:focus {
-  border: solid 1px #999;
-}
-
-.question .contact__input {
-  border: solid 1px #ccc;
-}
-
 .contact__textarea {
-  max-width: 225px;
+  max-width: 250px;
   max-height: 87px;
-  margin: 0;
   padding: 6px 12px;
   font-family: "PTSans", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -515,31 +475,13 @@ html {
   color: #fff;
 }
 
-.question .contact__textarea:focus {
-  border: solid 1px #999;
-}
-
-.question .contact__textarea {
-  margin: 20px auto;
-  max-width: 190px;
-  border: solid 1px #ccc;
-}
-
 .contact .webform-client-form {
   max-width: 470px;
   overflow: hidden;
 }
 
-.contact .form-actions {
-  float: right;
-  clear: both;
-  margin: 0;
-}
-
 .contact .form-submit {
-  position: relative;
-  top: -40px;
-  width: 225px;
+  width: 250px;
   padding: 11px 20px;
   background: #fac819;
   color: #fff;
@@ -986,18 +928,19 @@ html {
 .usage__title {
   position: relative;
   left: 70px;
+  max-width: 250px;
+  margin: 0 auto;
   padding-top: 175px;
   color: #606060;
   font-family: "BanderaPro", Georgia, Times, "Times New Roman", serif;
   font-size: 27px;
-  text-align: center;
 }
 
 .usage__content {
-  float: right;
+  float: left;
   margin-top: 100px;
+  margin-left: 45%;
   max-width: 550px;
-  margin-right: 155px;
   padding-top: 12px;
 }
 
@@ -1217,6 +1160,44 @@ html {
     padding: 80px 0 85px;
   }
 
+  .contact__fio {
+    float: left;
+    margin-bottom: 10px;
+  }
+
+  .contact__email {
+    float: left;
+    clear: left;
+    margin: 0;
+  }
+
+  .contact__text {
+    float: right;
+    position: relative;
+    top: -48px;
+    margin: 0;
+  }
+
+  .contact__input {
+    max-width: 225px;
+  }
+
+  .contact__textarea {
+    max-width: 225px;
+  }
+
+  .contact .form-actions {
+    float: right;
+    clear: both;
+    margin: 0;
+  }
+
+  .contact .form-submit {
+    width: 225px;
+    position: relative;
+    top: -40px;
+  }
+
   .why__step--2 {
     margin: 0 2px 0 12px;
   }
@@ -1418,6 +1399,26 @@ html {
     margin-bottom: 6px;
   }
 
+  .capsule {
+    background: url("../../../images/front/bg/capsule_sm.jpg") no-repeat center top;
+    height: 367px;
+    background-size: cover;
+  }
+
+  .capsule__list {
+    padding: 6px 6px 6px 12px;
+  }
+
+  .contact__form {
+    text-align: center;
+    padding-bottom: 45px;
+  }
+
+  .contact .form-textarea-wrapper {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
   .why {
     background: url("../../../images/front/bg/why_sm.jpg") no-repeat center top;
     height: 558px;
@@ -1529,111 +1530,74 @@ html {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 959px) {
 
-  .contact {
-    padding: 32px 0 38px;
-  }
-
-  .contact__title {
-    max-width: 200px;
-    float: none;
-    margin: 0 auto 25px;
-    padding-right: 0;
-    text-align: center;
-  }
-
-  .contact__button {
-    display: block;
-    max-width: 220px;
+  .capsule__text {
+    max-width: 400px;
     margin: 0 auto;
-    color: #fff;
-    font-family: "BanderaProMedium", Georgia, Times, "Times New Roman", serif;
+  }
+
+  .capsule__title {
+    margin: 20px 0 35px;
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .capsule__item {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .header__phone {
+    margin-bottom: 12px;
+    font-size: 24px;
+  }
+
+  .why__left {
+    max-width: 330px;
+    padding-top: 40px;
+  }
+
+  .why__right {
+    max-width: 450px;
+  }
+
+  .why__question {
+    padding-left: 40px;
+    font-size: 24px;
+  }
+
+  .why__brand {
+    font-size: 64px;
+  }
+
+  .why__steps {
+    margin: 40px 0 10px;
+  }
+
+  .why__text {
     font-size: 16px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .contact__form {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  .contact__title {
-    margin-left: 10%;
-  }
-
-  .contact__form {
-    width: 60%;
-  }
-
-  .contact__small {
-    font-size: 28px;
-  }
-
-  .contact__large {
-    font-size: 40px;
-  }
-}
-
-@media (max-width: 639px) {
-
-  .contact__small {
-    display: inline-block;
-    font-size: 18px;
-  }
-
-  .contact__large {
-    display: inline-block;
-    font-size: 18px;
-  }
-
-  .map {
-    padding-top: 25px;
-  }
-
-  .map__title {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-
-  .map__caption {
-    display: none;
-  }
-
-  .map__item {
-    margin: 7px 0;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 767px) {
-
-  .contact__small {
-    display: inline-block;
-    line-height: 1;
-    font-size: 24px;
-  }
-
-  .contact__large {
-    display: inline-block;
-    line-height: 1;
-    font-size: 24px;
-  }
-
-  .map__title {
-    font-size: 24px;
-  }
-
-  .map__caption {
-    font-size: 24px;
   }
 }
 
 @media (min-width: 960px) {
+
+  .capsule__text {
+    max-width: 525px;
+    margin-left: 180px;
+    text-align: right;
+  }
+
+  .capsule__title {
+    margin: 30px 0 45px;
+    padding: 0;
+    font-size: 31px;
+  }
+
+  .capsule__item {
+    font-size: 24px;
+    line-height: 1.6;
+  }
 
   .flag {
     background-image: url("../../../images/front/sprites.png");
@@ -1743,6 +1707,77 @@ html {
   }
 }
 
+@media (min-width: 480px) and (max-width: 899px) {
+
+  .contact__title {
+    max-width: 300px;
+    margin: 0 auto 15px;
+    padding: 50px 0 0;
+  }
+
+  .contact__form {
+    max-width: 456px;
+    padding: 30px 0 10px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1139px) {
+
+  .contact__title {
+    float: left;
+    max-width: 35%;
+    margin: 70px 0 0 3%;
+    padding: 0 20px 0 0;
+  }
+
+  .contact__form {
+    float: left;
+    width: 60%;
+    max-width: 60%;
+    margin: 0 0 15px;
+    padding: 75px 0 0 30px;
+  }
+}
+
+@media (min-width: 1140px) {
+
+  .contact__title {
+    float: left;
+    max-width: 40%;
+    margin: 70px 0 0 12%;
+    padding: 0 20px 0 0;
+  }
+
+  .contact__form {
+    float: left;
+    width: 45%;
+    max-width: 45%;
+    margin: 0 0 15px;
+    padding: 75px 0 0 45px;
+  }
+
+  .contact__small {
+    font-size: 32px;
+    right: 60px;
+  }
+
+  .contact__large {
+    font-size: 78px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1139px) {
+
+  .contact__small {
+    right: 40px;
+    font-size: 24px;
+  }
+
+  .contact__large {
+    font-size: 64px;
+  }
+}
+
 @media (max-width: 399px) {
 
   .header {
@@ -1800,40 +1835,6 @@ html {
   }
 }
 
-@media (min-width: 480px) and (max-width: 959px) {
-
-  .header__phone {
-    margin-bottom: 12px;
-    font-size: 24px;
-  }
-
-  .why__left {
-    max-width: 330px;
-    padding-top: 40px;
-  }
-
-  .why__right {
-    max-width: 450px;
-  }
-
-  .why__question {
-    padding-left: 40px;
-    font-size: 24px;
-  }
-
-  .why__brand {
-    font-size: 64px;
-  }
-
-  .why__steps {
-    margin: 40px 0 10px;
-  }
-
-  .why__text {
-    font-size: 16px;
-  }
-}
-
 @media (min-width: 400px) {
 
   .header__down {
@@ -1858,5 +1859,36 @@ html {
 
   .modal__text {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .map {
+    padding-top: 25px;
+  }
+
+  .map__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .map__caption {
+    display: none;
+  }
+
+  .map__item {
+    margin: 7px 0;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+
+  .map__title {
+    font-size: 24px;
+  }
+
+  .map__caption {
+    font-size: 24px;
   }
 }

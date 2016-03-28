@@ -15,18 +15,19 @@
   &__title {
     position: relative;
     left: 70px;
+    max-width: 250px;
+    margin: 0 auto;
     padding-top: 175px;
     color: #606060;
     font-family: $bpro;
     font-size: 27px;
-    text-align: center;
-  }
+   }
 
   &__content {
-    float: right;
+    float: left;
     margin-top: 100px;
+    margin-left: 45%;
     max-width: 550px;
-    margin-right: 155px;
     padding-top: 12px;
   }
 

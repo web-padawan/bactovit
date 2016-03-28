@@ -1,146 +1,131 @@
 .contact {
   background: $gray-mid;
 
-  @include breakpoint(max-width 767px) {
-    padding: 32px 0 38px
-  }
-
   &__inner {
     @include container;
   }
 
   &__title {
-    float: left;
-    max-width: 40%;
-    margin-top: 70px;
-    margin-left: 12%;
-    padding-right: 20px;
+    margin: 0 auto 36px;
+    max-width: 200px;
+    padding: 48px 0 0;
     vertical-align: top;
     color: #fff;
     font-family: $bpro-medium;
     font-style: italic;
     text-align: right;
 
-    @include breakpoint(max-width 767px) {
-      max-width: 200px;
-      float: none;
-      margin: 0 auto 25px;
-      padding-right: 0;
-      text-align: center;
+    @include breakpoint(480px 899px) {
+      max-width: 300px;
+      margin: 0 auto 15px;
+      padding: 50px 0 0;
     }
-    @include breakpoint(768px 1023px) {
-      margin-left: 10%;
+    @include breakpoint(900px 1139px) {
+      float: left;
+      max-width: 35%;
+      margin: 70px 0 0 3%;
+      padding: 0 20px 0 0;
     }
-  }
-
-  &__button {
-    display: none;
-
-    @include breakpoint(max-width 767px) {
-      display: block;
-      max-width: 220px;
-      margin: 0 auto;
-      color: #fff;
-      font-family: $bpro-medium;
-      font-size: 16px;
-      padding: 10px;
-      border-radius: 5px;
-      text-align: center;
-      text-decoration: none;
+    @include breakpoint(1140px) {
+      float: left;
+      max-width: 40%;
+      margin: 70px 0 0 12%;
+      padding: 0 20px 0 0;
     }
   }
 
   &__form {
-    float: left;
-    width: 45%;
-    margin-bottom: 15px;
-    padding-top: 75px;
-    padding-left: 45px;
+    margin: 0 auto 15px;
 
-    @include breakpoint(max-width 767px) {
-      display: none;
+    @include breakpoint(max-width 479px) {
+      text-align: center;
+      padding-bottom: 45px;
     }
-    @include breakpoint(768px 1023px) {
+    @include breakpoint(480px 899px) {
+      max-width: 456px;
+      padding: 30px 0 10px;
+    }
+    @include breakpoint(900px 1139px) {
+      float: left;
       width: 60%;
+      max-width: 60%;
+      margin: 0 0 15px;
+      padding: 75px 0 0 30px;
+    }
+    @include breakpoint(1140px) {
+      float: left;
+      width: 45%;
+      max-width: 45%;
+      margin: 0 0 15px;
+      padding: 75px 0 0 45px;
     }
   }
 
   &__small {
-    font-size: 32px;
+    font-size: 18px;
     position: relative;
-    right: 60px;
+    right: 25px;
 
-    @include breakpoint(max-width 639px) {
-      display: inline-block;
-      font-size: 18px;
-    }
-    @include breakpoint(640px 767px) {
-      display: inline-block;
-      line-height: 1;
+    @include breakpoint(480px 1139px) {
+      right: 40px;
       font-size: 24px;
     }
-    @include breakpoint(768px 1023px) {
-      font-size: 28px;
+    @include breakpoint(1140px) {
+      font-size: 32px;
+      right: 60px;
     }
   }
 
   &__large {
-    font-size: 78px;
+    font-size: 36px;
     line-height: 0.5;
     font-weight: bold;
     letter-spacing: 0.06em;
 
-    @include breakpoint(max-width 639px) {
-      display: inline-block;
-      font-size: 18px;
+    @include breakpoint(480px 1139px) {
+      font-size: 64px;
     }
-    @include breakpoint(640px 767px) {
-      display: inline-block;
-      line-height: 1;
-      font-size: 24px;
-    }
-    @include breakpoint(768px 1023px) {
-      font-size: 40px;
+    @include breakpoint(1140px) {
+      font-size: 78px;
     }
   }
 
   // form field wrappers
   &__fio {
-    float: left;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 
-    .question & {
-      float: none;
+    @include breakpoint(480px) {
+      float: left;
+      margin-bottom: 10px;
     }
   }
 
   &__email {
-    float: left;
-    clear: left;
-    margin: 0;
+    margin-bottom: 12px;
 
-    .question & {
-      float: none;
+    @include breakpoint(480px) {
+      float: left;
+      clear: left;
+      margin: 0;
     }
   }
 
   &__text {
-    float: right;
-    margin: 0;
-    position: relative;
-    top: -48px;
-    font-size: 14px;
+    margin-bottom: 15px;
+    font-size: 16px;
     border-radius: 5px;
 
-    .question & {
-      float: none;
-      position: static;
+    @include breakpoint(480px) {
+      float: right;
+      position: relative;
+      top: -48px;
+      margin: 0;
     }
   }
 
   // form fields
   &__input {
-    max-width: 225px;
+    max-width: 250px;
     margin: 0;
     padding: 8px 6px 8px 24px;
     font-family: $ptsans;
@@ -152,6 +137,11 @@
       color: #9c9c9c;
       font-style: italic;
     }
+
+    @include breakpoint(480px) {
+      max-width: 225px;
+    }
+
     &:focus {
       outline: none;
       border: solid 1px #999;
@@ -159,25 +149,21 @@
       @include input-placeholder {
         color: #fff;
       }
-      .question & {
-        border: solid 1px #999;
-      }
-    }
-
-    .question & {
-      border: solid 1px #ccc;
     }
   }
 
   &__textarea {
-    max-width: 225px;
+    max-width: 250px;
     max-height: 87px;
-    margin: 0;
     padding: 6px 12px;
     font-family: $ptsans;
     font-size: 16px;
     border: solid 1px #fff;
     border-radius: 5px;
+
+    @include breakpoint(480px) {
+      max-width: 225px;
+    }
 
     @include input-placeholder {
       color: #9c9c9c;
@@ -190,15 +176,6 @@
       @include input-placeholder {
         color: #fff;
       }
-      .question & {
-        border: solid 1px #999;
-      }
-    }
-
-    .question & {
-      margin: 20px auto;
-      max-width: 190px;
-      border: solid 1px #ccc;
     }
   }
 
@@ -208,15 +185,25 @@
   }
 
   .form-actions {
-    float: right;
-    clear: both;
-    margin: 0;
+
+    @include breakpoint(480px) {
+      float: right;
+      clear: both;
+      margin: 0;
+    }
+  }
+
+  .form-textarea-wrapper {
+
+    @include breakpoint(max-width 479px) {
+      max-width: 250px;
+      margin: 0 auto;
+    }
   }
 
   .form-submit {
-    position: relative;
-    top: -40px;
-    width: 225px;
+
+    width: 250px;
     padding: 11px 20px;
     background: #fac819;
     color: #fff;
@@ -226,6 +213,12 @@
     text-decoration: none;
     border-radius: 5px;
     box-shadow: 0 5px 0 #b6941b;
+
+    @include breakpoint(480px) {
+      width: 225px;
+      position: relative;
+      top: -40px;
+    }
 
     &:hover {
       background: darken(#fac819, 10%);
