@@ -59,7 +59,7 @@ gulp.task('browser-sync', ['styles'], function(){
     'layouts/**/.tpl.php'
   ];
   return browserSync.init(files, {
-    proxy: "http://bactovit.com.ua.local",
+    proxy: "http://bactovit.com.local",
     open: false,
     injectChanges: true
   });
