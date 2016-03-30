@@ -216,7 +216,7 @@
   &__down {
     @include sprite($s-down_sm);
     position: absolute;
-    bottom: -20px;
+    bottom: -32px;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;

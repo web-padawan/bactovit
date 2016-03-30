@@ -161,6 +161,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  box-shadow: inset 0 25px 30px -25px;
 }
 
 .about__title {
@@ -239,14 +240,14 @@ html {
 
 .about__circle--gold {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -244px -155px;
+  background-position: -209px -135px;
   width: 42px;
   height: 42px;
 }
 
 .about__circle--blue {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -186px -77px;
+  background-position: 0px -212px;
   width: 42px;
   height: 42px;
 }
@@ -499,7 +500,7 @@ html {
 
 .flag {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -186px 0px;
+  background-position: 0px -135px;
   width: 58px;
   height: 77px;
 }
@@ -657,25 +658,25 @@ html {
 
 .header__icon--vkontakte {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -244px -71px;
+  background-position: -107px -74px;
   width: 43px;
   height: 42px;
 }
 
 .header__icon--facebook {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -244px -113px;
+  background-position: -167px -135px;
   width: 42px;
   height: 42px;
 }
 
 .header__down {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -121px -135px;
+  background-position: -42px -212px;
   width: 38px;
   height: 37px;
   position: absolute;
-  bottom: -20px;
+  bottom: -32px;
   left: 50%;
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
@@ -720,7 +721,7 @@ html {
 
 .header__toggle {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -210px -135px;
+  background-position: -107px -116px;
   width: 26px;
   height: 19px;
   position: absolute;
@@ -760,7 +761,7 @@ html {
   top: 7px;
   right: 7px;
   background-image: url("../../../images/front/sprites.png");
-  background-position: -159px -135px;
+  background-position: -150px -74px;
   width: 28px;
   height: 28px;
 }
@@ -937,7 +938,7 @@ html {
 
 .usage__icon {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -59px -135px;
+  background-position: -186px -68px;
   width: 62px;
   height: 63px;
   display: inline-block;
@@ -1033,7 +1034,7 @@ html {
 
 .why__arrow {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -166px -74px;
+  background-position: -80px -212px;
   width: 18px;
   height: 32px;
   display: inline-block;
@@ -1046,14 +1047,14 @@ html {
 
 .why__icon--bottle {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -244px 0px;
+  background-position: -117px -135px;
   width: 50px;
   height: 71px;
 }
 
 .why__icon--course {
   background-image: url("../../../images/front/sprites.png");
-  background-position: 0px -135px;
+  background-position: -58px -135px;
   width: 59px;
   height: 75px;
 }
@@ -1067,7 +1068,7 @@ html {
 
 .why__icon--check {
   background-image: url("../../../images/front/sprites.png");
-  background-position: -187px -135px;
+  background-position: -167px -177px;
   width: 23px;
   height: 23px;
 }
@@ -1903,9 +1904,9 @@ html {
 
   .header__down {
     background-image: url("../../../images/front/sprites.png");
-    background-position: -107px -74px;
-    width: 59px;
-    height: 58px;
+    background-position: -186px 0px;
+    width: 68px;
+    height: 68px;
   }
 }
 
