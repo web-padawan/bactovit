@@ -216,13 +216,14 @@
   &__down {
     @include sprite($s-down_sm);
     position: absolute;
-    bottom: -32px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;
 
     @include breakpoint(400px) {
       @include sprite($s-down);
+      bottom: -32px;
     }
 
     &:focus {
